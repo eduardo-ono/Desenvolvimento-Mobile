@@ -26,7 +26,14 @@ Para verificar se todos os requisitos para execução do flutter estão instalad
 
 No Android Studio, em plugins, pesquisar por flutter e instalar. O plugin flutter possui como dependência o plugin dart, que será instalado também.
 
-## Configurando o VS Code (opcional)
+## Instalação do Flutter SDK no Ubuntu
+<br>
+
+    $ sudo snap install flutter --classic
+
+<br>
+
+## Configuração do VS Code (opcional)
 <br>
 
 * Extensão Flutter (Dart Code)
