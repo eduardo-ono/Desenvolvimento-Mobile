@@ -1,43 +1,99 @@
-# Desenvolvimento Mobile > Conteúdo > Flutter - Ambiente de Desenvolvimento
+# Desenvolvimento Mobile > Flutter > Ambiente de Desenvolvimento
 
 Prof. Eduardo Ono
 
 <br>
 
-## Pré-Requisitos de Software
+## Requisitos de Hardware
 <br>
 
+* Consulte [aqui](../../ambiente-de-desenvolvimento/).
+
+<br>
+
+## Requisitos de Software
+<br>
+
+* Git
 * Android Studio
-* VS Code (opcional)
+* Flutter SDK
+* Visual Studio Code + Extensões
 
 <br>
 
-## Instalação do Flutter SDK no Windows
+## Instalação do Flutter SDK
 <br>
 
-* https://flutter.dev/docs/get-started/install/windows/ (~700 MB)
+### Windows
+<br>
 
+Baixar o arquivo .zip e descompactá-lo em um diretório de sua preferência, por exemplo, C:\flutter.
 
-* Adicionar o diretório <path>\flutter\bin na variável de ambiente Path do Windows.
+> ### Site do desenvolvedor para download
+> * https://flutter.dev/docs/get-started/install/windows/ (~700 MB)
 
-Para verificar se todos os requisitos para execução do flutter estão instalados, digitar:
+Obs.: **Não** instalar (descompactar) o flutter dentro de um diretório que requeira privilégios elevados, por exemplo, "C:\Arquivos de Programas".
 
-* > flutter doctor
+<br>
 
-No Android Studio, em plugins, pesquisar por flutter e instalar. O plugin flutter possui como dependência o plugin dart, que será instalado também.
+* Adicionar o diretório <path>\flutter\bin nas variáveis de ambiente (Path) do Windows.
 
-## Instalação do Flutter SDK no Ubuntu
+<br>
+
+### Ubuntu
 <br>
 
     $ sudo snap install flutter --classic
 
 <br>
 
-## Configuração do VS Code (opcional)
+## Configurando as Dependências do Flutter
 <br>
 
-* Extensão Flutter (Dart Code)
+Para verificar se o flutter está corretamente configurado, na janela do terminal digitar:
 
-Para executar um projeto no Terminal:
+    flutter
 
-* flutter run
+Para verificar se todos os [requisitos para execução do flutter](figuras/flutter-doctor-erros.png) estão instalados, digitar:
+
+    flutter doctor
+
+No Android Studio, em [plugins](figuras/android-studio-plugins.png), pesquisar por [flutter](figuras/android-studio-plugins-flutter.png) e instalar. O plugin flutter possui como dependência o plugin dart. Será [solicitado](figuras/android-studio-plugins-dart.png) para você instalar este plugin também.
+
+
+## Atualizando o Flutter
+<br>
+
+No Terminal, digitar:
+
+    flutter
+
+Caso haja uma nova versão disponível, o flutter irá solicitar o seguinte comando:
+
+    flutter upgrade
+
+<br>
+
+## Microsoft Visual Studio Code (VS Code)
+<br>
+
+> ### Extensões:
+> * Flutter (Dart Code)
+
+<br>
+
+## Projetos em Flutter
+<br>
+
+### Criando um novo projeto
+
+    flutter create --org <br.com.dominio> <nome_do_projeto>
+
+* br.com.dominio é o endereço de sua empresa em ordem contrária.
+
+<br>
+
+## Executando um projeto Flutter no Terminal:
+
+    flutter run
+

@@ -1,43 +1,57 @@
-# Desenvolvimento Mobile > Conteúdo > Ambiente de Desenvolvimento
+# Desenvolvimento Mobile > Ambiente de Desenvolvimento
 
 Prof. Eduardo Ono
 
-<br><br>
-
-## Ambiente de Desenvolvimento (Java e Kotlin) para Android
 <br>
 
-> ### Android Studio
+## Requisitos de Hardware
 <br>
 
-Site do desenvolvedor:
+* Processador com tecnologia de virtualização
+    * Intel: AV-T
+    * AMD: AMD-V
 
-* http://
-
-<br>
-
-### Instalação (Windows)
-<br>
-
-* [Área Tech Brasil] [Android Studio 4.0 - Como Instalar Corretamente (Abr/2020)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw) (YouTube, 14:32)
+Obs.: A tecnologia de virtualização deve estar habilitada na BIOS. Para verificar se está habilitada, verifique no Gerenciador de Tarefas.
 
 <br>
 
-### Instalação (Ubuntu)
+## Requisitos Gerais de Software
+<br>
+
+* S.O. Microsoft Windows 10 64-bit
+* Android Studio
+
+<br>
+
+### Instalação do Android Studio (Windows)
+<br>
+
+> Site do desenvolvedor:
+> * https://developer.android.com/studio
+
+<br>
+
+> Vídeo com o processo de instalação:
+> * [Área Tech Brasil] [Android Studio 4.0 - Como Instalar Corretamente (Abr/2020)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw) (YouTube, 14:32)
+
+<br>
+
+### Instalação do Android Studio (Ubuntu)
 <br>
 
 No Terminal, entrar com o comando:
 
-    $ sudo snap install android-studio --classic
+     $ sudo snap install android-studio --classic
 
-* [Rocking Support] [How To Install Android Studio On Ubuntu 20.04](https://www.youtube.com/watch?v=I-Sxda91Yf4) (YouTube, 6:11)
+> Vídeo com o processo de instalação:
+> * [Rocking Support] [How To Install Android Studio On Ubuntu 20.04](https://www.youtube.com/watch?v=I-Sxda91Yf4) (YouTube, 6:11)
 
-<br><br>
+<br>
 
 ### Configuração do Emulador Android (Windows e Ubuntu)
 
 * [] []() (YouTube, )
 
-<br><br>
+<br>
 
 > ## Bibliografia
