@@ -14,6 +14,7 @@ Prof. Eduardo Ono
 ## Requisitos de Software
 <br>
 
+* Windows 10 64-bit
 * Git
 * Android Studio
 * Flutter SDK
@@ -27,12 +28,12 @@ Prof. Eduardo Ono
 ### Windows
 <br>
 
-Baixar o arquivo .zip e descompactá-lo em um diretório de sua preferência, por exemplo, C:\flutter.
+Baixar o arquivo .zip e descompactar em um diretório de sua preferência, por exemplo, C:\src ou C:\. Será criado um sub-diretório chamado flutter.
 
 > ### Site do desenvolvedor para download
 > * https://flutter.dev/docs/get-started/install/windows/ (~700 MB)
 
-Obs.: **Não** instalar (descompactar) o flutter dentro de um diretório que requeira privilégios elevados, por exemplo, "C:\Arquivos de Programas".
+Obs.: **Não** instalar (descompactar) o flutter em um diretório que requeira privilégios elevados, por exemplo, "C:\Arquivos de Programas".
 
 <br>
 
@@ -87,13 +88,18 @@ Caso haja uma nova versão disponível, o flutter irá solicitar o seguinte coma
 
 ### Criando um novo projeto
 
+Mover para um diretório onde será criada um sub-diretório com o nome do projeto e onde os arquivos do projeto serão armazenados:
+
     flutter create --org <br.com.dominio> <nome_do_projeto>
 
-* br.com.dominio é o endereço de sua empresa em ordem contrária.
+* br.com.dominio é o endereço de sua empresa (pode ser fictícia) na ordem contrária.
 
 <br>
 
 ## Executando um projeto Flutter no Terminal:
 
+Mudar para o diretório do projeto e digitar:
+
     flutter run
 
+Obs.: É preferível executar o projeto através do VS Code.
