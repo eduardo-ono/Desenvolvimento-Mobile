@@ -8,17 +8,21 @@ Prof. Eduardo Ono
 <br>
 
 * Processador com tecnologia de virtualização
-    * Intel: AV-T
+    * Intel: VT-X
     * AMD: AMD-V
 
-Obs.: A tecnologia de virtualização deve estar habilitada na BIOS. Para verificar se está habilitada, verifique no Gerenciador de Tarefas.
+Obs.: A tecnologia de virtualização deve estar habilitada na BIOS. Para verificar se está habilitada, verifique no Gerenciador de Tarefas. No Windows Terminal, digitar:
+
+    systeminfo
+
+Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 
 <br>
 
 ## Requisitos Gerais de Software
 <br>
 
-* S.O. Microsoft Windows 10 64-bit
+* Microsoft Windows 10 64-bit
 * Android Studio
 
 <br>
@@ -41,16 +45,16 @@ Obs.: A tecnologia de virtualização deve estar habilitada na BIOS. Para verifi
 
 No Terminal, entrar com o comando:
 
-     $ sudo snap install android-studio --classic
+    $ sudo snap install android-studio --classic
 
 > Vídeo com o processo de instalação:
 > * [Rocking Support] [How To Install Android Studio On Ubuntu 20.04](https://www.youtube.com/watch?v=I-Sxda91Yf4) (YouTube, 6:11)
 
 <br>
 
-### Configuração do Emulador Android (Windows e Ubuntu)
+### Configurando o Emulador Android (Windows e Ubuntu)
 
-* [] []() (YouTube, )
+* [Tiago Aguiar] [Emulador Android Como Instalar](https://www.youtube.com/watch?v=YAkH6DcmbOY) (YouTube, 7:34, Mar/2020)
 
 <br>
 

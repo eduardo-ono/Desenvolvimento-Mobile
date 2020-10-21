@@ -67,5 +67,11 @@ Prof. Eduardo Ono
 
 <br>
 
+## Vídeos Recomendados
+
+* [Academind] [React Native vs Flutter (Jul/2018)](https://www.youtube.com/watch?v=bnYJRYFsrSw) (YouTube, 33:40)
+
+<br>
+
 ## Bibliografia
 <br>

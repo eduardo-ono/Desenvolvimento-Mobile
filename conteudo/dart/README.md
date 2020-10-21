@@ -46,6 +46,112 @@ void main() {
 ```
 </details>
 
+<details>
+    <summary>Estrutura if-else</summary>
+
+```dart
+import 'dart:math';
+
+void main() {
+  var random = new Random();
+  int num =
+      random.nextInt(100);  // Gera um número inteiro aleatório menor que 100
+
+  print("Número = $num");
+  if (num % 2 == 0)
+    print("O número é par.");
+  else
+    print("O número é impar.");
+}
+```
+</details>
+
+<details>
+    <summary>Funções: Parâmetros identificados em Dart</summary>
+
+```cpp
+// C++
+
+#include <iostream>
+
+using namespace std;
+
+
+// Sobrecarga de funções (Polimorfismo)
+
+void calcularImc(double peso, double altura)
+{
+    double imc = peso / (altura * altura);
+    cout << "Peso = " << peso << endl;
+    cout << "IMC = " << imc << "\n\n";
+}
+
+void calcularImc(double peso, double altura, string nome)
+{
+    double imc = peso / (altura * altura);
+
+    cout << "Nome: " << nome << endl;
+    cout << "Peso = " << peso << endl;
+    cout << "IMC = " << imc << "\n\n";
+}
+
+int main()
+{
+    calcularImc(74, 1.82);
+    calcularImc(75, 1.79, "Fulano");
+    return 0;
+}
+
+```
+
+```dart
+// Dart
+
+// Sequência de parâmetros opcionais (entre colchetes)
+void calcularImc(double peso, double altura, [String nome, int idade]) {
+  double imc = peso / (altura * altura);
+
+  print("Nome: $nome");
+  print("Idade = $idade");
+  print("Peso = $peso");
+  print("Altura = $altura");
+  print("IMC = ${imc.toStringAsPrecision(3)}");
+  print("");
+}
+
+void main() {
+  calcularImc(74, 1.82);
+  calcularImc(74, 1.82, "Fulano");
+  calcularImc(74, 1.82, "Fulano", 29);
+  calcularImc(74, 1.82, 29); // ERRO!
+  calcularImc(74, 1.82, 29, "Fulano"); // ERRO!
+}
+```
+
+```dart
+// Dart
+
+// Parâmetros opcionais identificados (entre chaves)
+void calcularImc(double peso, double altura, {String nome, int idade}) {
+  double imc = peso / (altura * altura);
+
+  print("Nome: $nome");
+  print("Idade = $idade");
+  print("Peso = $peso");
+  print("Altura = $altura");
+  print("IMC = ${imc.toStringAsPrecision(3)}");
+  print("");
+}
+
+void main() {
+  calcularImc(74, 1.82);
+  calcularImc(74, 1.82, nome: "Fulano");
+  calcularImc(74, 1.82, nome: "Fulano", idade: 29);
+  calcularImc(74, 1.82, idade: 29);
+  calcularImc(74, 1.82, idade: 29, nome: "Fulano");
+}
+```
+</details>
 
 <br>
 
