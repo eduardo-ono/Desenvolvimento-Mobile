@@ -20,15 +20,13 @@ Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 <br>
 
 ## Requisitos Gerais de Software
-<br>
 
 * Microsoft Windows 10 64-bit
 * Android Studio
 
 <br>
 
-### Instalação do Android Studio (Windows)
-<br>
+## Instalação do Android Studio (Windows)
 
 > Site do desenvolvedor:
 > * https://developer.android.com/studio
@@ -38,12 +36,15 @@ Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 > Vídeo com o processo de instalação:
 > * [Área Tech Brasil] [Android Studio 4.0 - Como Instalar Corretamente (Abr/2020)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw) (YouTube, 14:32)
 
+> Erros/problemas que podem ocorrer na instalação:
+> * [Área Tech Brasil] [Como Corrigir Erros no Android Studio?](https://www.youtube.com/watch?v=ECIz_FnwuoI) (YouTube, 1:08:30, Out/2020)
+
 <br>
 
-### Instalação do Android Studio (Ubuntu)
+## Instalação do Android Studio (Ubuntu)
 <br>
 
-No Terminal, entrar com o comando:
+No Terminal, digitar o comando:
 
     $ sudo snap install android-studio --classic
 
@@ -52,7 +53,7 @@ No Terminal, entrar com o comando:
 
 <br>
 
-### Configurando o Emulador Android (Windows e Ubuntu)
+## Configurando o Emulador Android (Windows e Ubuntu)
 
 * [Tiago Aguiar] [Emulador Android Como Instalar](https://www.youtube.com/watch?v=YAkH6DcmbOY) (YouTube, 7:34, Mar/2020)
 

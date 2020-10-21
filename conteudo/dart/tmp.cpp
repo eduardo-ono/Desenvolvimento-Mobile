@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 
@@ -13,14 +14,16 @@ void calcularImc(double peso, double altura, string nome)
 {
     double imc = peso / (altura * altura);
 
+    printf("Nome: %s\n", nome);
     cout << "Nome: " << nome << endl;
-    cout << "Peso = " << peso << endl;
-    cout << "IMC = " << imc << "\n\n";
+    printf("Peso = %.1f\n", peso);
+    printf("IMC = %.1f\n\n", imc);
 }
 
 int main()
 {
     calcularImc(74, 1.82);
-    calcularImc(75, 1.79, "Fulano");
+    calcularImc(74, 1.82, "Fulano");
+    calcularImc(74, "Fulano", 1.82);  // ERRO!
     return 0;
 }
