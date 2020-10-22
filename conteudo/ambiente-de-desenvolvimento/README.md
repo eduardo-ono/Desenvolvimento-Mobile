@@ -5,7 +5,6 @@ Prof. Eduardo Ono
 <br>
 
 ## Requisitos de Hardware
-<br>
 
 * Processador com tecnologia de virtualização
     * Intel: VT-X
@@ -31,18 +30,16 @@ Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 > Site do desenvolvedor:
 > * https://developer.android.com/studio
 
-<br>
-
 > Vídeo com o processo de instalação:
 > * [Área Tech Brasil] [Android Studio 4.0 - Como Instalar Corretamente (Abr/2020)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw) (YouTube, 14:32)
 
 > Erros/problemas que podem ocorrer na instalação:
+> * [Como corrigir erros no Android Studio?](https://areatechbrasil.com.br/como-corrigir-erros-no-android-studio/)
 > * [Área Tech Brasil] [Como Corrigir Erros no Android Studio?](https://www.youtube.com/watch?v=ECIz_FnwuoI) (YouTube, 1:08:30, Out/2020)
 
 <br>
 
 ## Instalação do Android Studio (Ubuntu)
-<br>
 
 No Terminal, digitar o comando:
 

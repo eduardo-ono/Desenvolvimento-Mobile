@@ -5,21 +5,20 @@ Prof. Eduardo Ono
 <br>
 
 ## Conceitos
-<br>
 
 * [Código Fonte TV] [Dart (a linguagem do Flutter)](https://www.youtube.com/watch?v=i7IzlVImHEc) (YouTube, 5:53, Out/2019)
 
 <br>
 
 ## Ambiente de Desenvolvimento
-<br>
 
 * [Link](ambiente-de-desenvolvimento.md)
 
 <br>
 
 ## Fundamentos da Linguagem
-<br>
+
+### Hello World!
 
 <details>
     <summary>Primeiro programa em Dart</summary>
@@ -27,9 +26,13 @@ Prof. Eduardo Ono
 ```dart
 void main() {
     print('Olá mundo!');
+    // ou
+    print("Olá mundo!");
 }
 ```
 </details>
+
+### Tipos de Dados, Variáveis e Operadores
 
 <details>
     <summary>Cálculo do IMC</summary>
@@ -45,6 +48,8 @@ void main() {
 }
 ```
 </details>
+
+### Estruturas de Decisão
 
 <details>
     <summary>Estrutura if-else</summary>
@@ -65,6 +70,41 @@ void main() {
 }
 ```
 </details>
+
+### Estruturas de Repetição
+
+<details>
+    <summary>for, while e do-while</summary>
+
+```dart
+import 'dart:io';
+
+void main() {
+  int i;
+
+  for (i = 0; i < 100; i++) {
+    stdout.write('$i '); // "print" sem quebra de linha ao final
+  }
+  print('');
+
+  i = 0;
+  while (i < 100) {
+    stdout.write('${i++} ');
+    i++;
+  }
+  print('');
+
+  i = 0;
+  do {
+    stdout.write('$i ');
+    i++;
+  } while (i < 100);
+  print('');
+}
+```
+</details>
+
+### Funções
 
 <details>
     <summary>Funções: Parâmetros identificados em Dart</summary>
@@ -151,6 +191,141 @@ void main() {
 }
 ```
 </details>
+
+### Vetores
+
+<br>
+
+## Programação Orientada à Objeto
+
+### Abstração
+
+<details>
+    <summary>Classes e Objetos</summary>
+
+```dart
+void main() {
+  Paciente paciente = Paciente();
+  paciente.nome = "Fulano de Tal";
+  paciente.peso = 75; // kg
+  paciente.altura = 1.82; // metros
+  paciente.calcularImc();
+  paciente.imprimirDados();
+}
+
+class Paciente {
+  // Atributos
+  String nome;
+  double peso;
+  double altura;
+  double imc;
+
+  // Métodos
+
+  void calcularImc() {
+    imc = peso / (altura * altura);
+  }
+
+  void imprimirDados() {
+    print("Nome: $nome");
+    print("Peso: $peso");
+    print("Altura: $altura");
+    print("IMC: ${imc.toStringAsFixed(1)}");
+    print("");
+  }
+}
+```
+
+```dart
+void main() {
+  Paciente paciente1 = new Paciente("Fulano de Tal", 75, 1.82); // metros
+  var paciente2 = Paciente("Ciclano de Tal", 68, 1.71);
+  paciente1.imprimirDados();
+  paciente2.imprimirDados();
+}
+
+class Paciente {
+  // Atributos
+  String nome;
+  double peso;
+  double altura;
+  double imc;
+
+  // Construtor
+  Paciente(String nome, double peso, double altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+    calcularImc();
+  }
+
+  // Métodos
+
+  void calcularImc() {
+    imc = peso / (altura * altura);
+  }
+
+  void imprimirDados() {
+    print("Nome: $nome");
+    print("Peso: $peso");
+    print("Altura: $altura");
+    print("IMC: ${imc.toStringAsFixed(1)}");
+    print("");
+  }
+}
+```
+
+```dart
+void main() {
+  Paciente paciente = new Paciente("Fulano de Tal", 75, 1.82); // metros
+  var paciente2 = Paciente("Ciclano de Tal", 68, 1.71);
+  paciente.imprimirDados();
+}
+
+class Paciente {
+  // Atributos
+  String nome;
+  double peso;
+  double altura;
+  double imc;
+
+  // Construtor
+  Paciente(this.nome, this.peso, this.altura) {
+    calcularImc();
+  }
+
+  // Métodos
+
+  void calcularImc() {
+    imc = peso / (altura * altura);
+  }
+
+  void imprimirDados() {
+    print("Nome: $nome");
+    print("Peso: $peso");
+    print("Altura: $altura");
+    print("IMC: ${imc.toStringAsFixed(1)}");
+    print("");
+  }
+}
+```
+
+</details>
+
+### Encapsulamento
+
+### Herança
+
+### Polimorfisno
+
+<br>
+
+## Estrutura de Dados
+
+* Listas Encadeadas
+* Pilhas e Filas
+* Árvores
+* Grafos
 
 <br>
 
