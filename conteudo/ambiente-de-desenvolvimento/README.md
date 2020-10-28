@@ -39,7 +39,11 @@ Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 
 <br>
 
-## Instalação do Android Studio (Ubuntu)
+## Instalação do Android Studio (Ubuntu 20.04+)
+
+* Verificar se a tecnologia de virtualização KVM (Kernel-based Virtual Machine) está instalada, tanto para processadores Intel quanto AMD:
+
+* https://linuxize.com/post/how-to-install-kvm-on-ubuntu-20-04/
 
 No Terminal, digitar o comando:
 

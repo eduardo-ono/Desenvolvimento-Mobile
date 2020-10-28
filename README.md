@@ -2,20 +2,50 @@
 
 Prof. Eduardo Ono
 
-
-## Ambientes de Desenvolvimento (Java e Kotlin)
 <br>
 
-## Bibliografia
-<br>
+## Descrição
 
-## Filmes Recomendados
-<br>
-
-## Documentários Recomendados
 <br>
 
 ## Vídeos Recomendados
-<br>
 
 * [TED] [Linus Torvalds, The Mind Behind Linux](https://www.youtube.com/watch?v=o8NPllzkFhE) (YouTube, 21:30)
+
+<br>
+
+## Filmes Recomendados
+
+<br>
+
+## Documentários Recomendados
+
+<br>
+
+## Canais do YouTube Recomendados
+
+### Desenvolvimento Android em Java com Android Studio
+
+* [Área Tech Brasil](https://www.youtube.com/channel/UCpOSu4F9cqSjh1OgbmOT5cQ)
+
+<br>
+
+### Desenvolvimento Android em Kotlin
+
+* [Tiago Aguiar](https://www.youtube.com/channel/UCrWWMZ6GVOM5zqYAUI44XXg)
+
+<br>
+
+### Flutter
+
+* [Flutterando](Flutterando)
+
+<br>
+
+### React Native
+
+* [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg)
+
+<br>
+
+## Bibliografia

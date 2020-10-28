@@ -11,6 +11,7 @@ Prof. Eduardo Ono
 <br>
 
 * [https://flutter.dev/docs](https://flutter.dev/docs)
+* [https://api.flutter.dev](https://api.flutter.dev)
 
 <br>
 
@@ -49,13 +50,13 @@ Prof. Eduardo Ono
 * No Terminal, digitar o comando:
 
 ```sh
-$ sudo snap install flutter --classic
+sudo snap install flutter --classic
 ```
 
 * Após a instalação, digitar o comando:
 
 ```sh
-$ flutter
+flutter
 ```
 
 Aguardar a instalação do Flutter.
@@ -136,6 +137,13 @@ Aguardar a instalação do Flutter.
 
 <br>
 
+## Canais do YouTube Recomendados
+
+* [Rodrigo Rahman](https://www.youtube.com/channel/UC5hvPObwya8kzWWB-wmVlXg)
+
+<br>
+
 ## Bibliografia
 
+* [ZAMMETTI_2019] ZAMMETTI, Frank. Practical Flutter, 2019.
 * [WINDMILL_2020] WINDMILL, Eric. Flutter in Action, 2020.

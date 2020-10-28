@@ -13,4 +13,10 @@ Prof. Eduardo Ono
 
 <br>
 
+## Dicas para a Carreira Profissional
+
+* [Programador BR] [React Native, Flutter, Kotlin ou Swift? O que vale mais a pena? (Perguntas e respostas)](https://www.youtube.com/watch?v=2nZOTCTw4CM)
+
+<br>
+
 ## Bibliografia
