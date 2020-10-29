@@ -4,9 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new App());
-}
+void main() => runApp(new App());
 
 class App extends StatelessWidget {
   // This widget is the root of your application.
@@ -25,12 +23,16 @@ class App extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  // Construtor
+  MyHomePage({Key id, this.title}) : super(key: id);
 
+  // Atributos
   final String title;
 
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() {
+    return new _MyHomePageState();
+  }
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -44,14 +46,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: new AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -72,12 +76,25 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Icon(Icons.add),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          new FloatingActionButton(
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: new Icon(Icons.add),
+          ),
+          new FloatingActionButton(
+            onPressed: _decrementCounter,
+            tooltip: 'Increment',
+            child: Text(
+              '-',
+              style: TextStyle(fontSize: 35),
+            ),
+          ),
+        ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
-  }
+  } // class _MyHomePageState
 }
