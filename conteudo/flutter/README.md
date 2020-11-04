@@ -12,14 +12,18 @@ Prof. Eduardo Ono
 
 ## Documentação
 
-<br>
-
 * [https://flutter.dev/docs](https://flutter.dev/docs)
 * [https://api.flutter.dev](https://api.flutter.dev)
 
 <br>
 
 ## Ambiente de Desenvolvimento
+
+### Ambiente Online
+
+* [https://dartpad.dev/flutter](https://dartpad.dev/flutter)
+
+<br>
 
 ### Requisitos de Hardware
 
@@ -123,7 +127,7 @@ Aguardar a instalação do Flutter.
 > Será criado um sub-diretório com o nome `nome_do_projeto`.
 > Caso não seja utilizado o parâmetro `--org`, será utilizado um nome de domínio padrão.
 
-### Desenvolvendo um projeto no VS Code
+### Desenvolvendo um projeto Flutter no VS Code
 
 > * Instalar a extensão `Flutter` (Dark Code).
 

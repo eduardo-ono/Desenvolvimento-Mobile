@@ -192,6 +192,23 @@ void main() {
 ```
 </details>
 
+<details>
+  <summary>Funções Anônimas</summary>
+
+```dart
+void main() {
+  // Função anônima
+  var imc = (peso, altura) {
+    if (peso > 0 && altura > 0) return peso / (altura * altura);
+    return 0.0;
+  };
+
+  print(imc(68, 1.73).toStringAsFixed(1));
+}
+```
+
+</details>
+
 ### Vetores
 
 <br>
@@ -322,7 +339,27 @@ class Paciente {
 
 ## Estrutura de Dados
 
-* Listas Encadeadas
+### Listas Encadeadas
+
+<details>
+  <summary>Funções Anônimas</summary>
+
+```dart
+void main() {
+  List primos = <int>[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
+
+  primos.forEach((elemento) {
+    print(elemento);
+  });
+
+  // ou
+
+  primos.forEach((elemento) => print(elemento));
+}
+```  
+
+</details>
+
 * Pilhas e Filas
 * Árvores
 * Grafos
