@@ -1,12 +1,14 @@
-# Desenvolvimento Mobile > Conteúdo
+### Desenvolvimento Mobile
+
+# Conteúdo
 
 Prof. Eduardo Ono
 
 <br>
 
 ## Overview
-<br>
 
+<br>
 
 ## Conteúdo Programático
 
@@ -26,9 +28,11 @@ Prof. Eduardo Ono
 * [Ambiente de Desenvolvimento](./ambiente-de-desenvolvimento/README.md)
 
 ### Instalação (Windows)
+
 <br>
 
 ### Instalação (Ubuntu)
+
 <br>
 
 No Terminal, entrar com o comando:
@@ -63,6 +67,12 @@ No Terminal, entrar com o comando:
 <br>
 
 > ## Cursos "Completos"
+
+<br>
+
+> ## Dicas para a Carreira do Profissional
+
+* https://www.contabilizei.com.br
 
 <br>
 

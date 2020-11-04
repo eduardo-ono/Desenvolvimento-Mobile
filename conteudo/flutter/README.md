@@ -1,13 +1,17 @@
-# Desenvolvimento Mobile > Flutter
+### Desenvolvimento Mobile
+
+# Flutter
 
 Prof. Eduardo Ono
 
 <br>
 
 ## Overview
+
 <br>
 
 ## Documentação
+
 <br>
 
 * [https://flutter.dev/docs](https://flutter.dev/docs)
@@ -129,6 +133,8 @@ Aguardar a instalação do Flutter.
 
 ## Fundamentos
 
+* [RetroPortal Studio] [Top 10 Must Know Widgets In Detail for Flutter Developers - Flutter Tutorial](https://www.youtube.com/watch?v=x1LHDKLDT38) (YouTube, 1:09:12, Abr/2020)
+
 <br>
 
 ## Vídeos Recomendados
@@ -140,6 +146,7 @@ Aguardar a instalação do Flutter.
 ## Canais do YouTube Recomendados
 
 * [Rodrigo Rahman](https://www.youtube.com/channel/UC5hvPObwya8kzWWB-wmVlXg)
+* [Renato Mota](https://www.youtube.com/channel/UCd-vLa_qcKve3CsDFlYiygA)
 
 <br>
 
