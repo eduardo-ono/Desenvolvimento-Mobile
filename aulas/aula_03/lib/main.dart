@@ -1,5 +1,7 @@
 /*
-  App para calcular o IMC de uma pessoa.
+  App para calcular o IMC de uma pessoa através da fórmula:
+
+  IMC = 1.3 x peso / altura ^ 2.5 
 
   Referências:
 
