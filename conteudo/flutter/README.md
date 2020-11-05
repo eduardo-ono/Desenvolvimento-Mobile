@@ -14,6 +14,7 @@ Prof. Eduardo Ono
 
 * [https://flutter.dev/docs](https://flutter.dev/docs)
 * [https://api.flutter.dev](https://api.flutter.dev)
+* Icons: [https://api.flutter.dev/flutter/material/Icons-class.html](https://api.flutter.dev/flutter/material/Icons-class.html)
 
 <br>
 

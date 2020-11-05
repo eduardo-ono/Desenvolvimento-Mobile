@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: _calcularIMC,
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 30, 0, 30),
+              margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
               padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
               color: Colors.yellow,
               child: Text(
@@ -161,21 +161,25 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          new FloatingActionButton(
+          FloatingActionButton(
             onPressed: null,
-            tooltip: 'Increment',
-            child: Text(
-              '<',
-              style: TextStyle(fontSize: 35),
-            ),
+            tooltip: 'Primeiro',
+            child: Icon(Icons.first_page),
           ),
-          new FloatingActionButton(
+          FloatingActionButton(
             onPressed: null,
-            tooltip: 'Increment',
-            child: Text(
-              '>',
-              style: TextStyle(fontSize: 35),
-            ),
+            tooltip: 'Anterior',
+            child: Icon(Icons.navigate_before),
+          ),
+          FloatingActionButton(
+            onPressed: null,
+            tooltip: 'Próximo',
+            child: Icon(Icons.navigate_next),
+          ),
+          FloatingActionButton(
+            onPressed: null,
+            tooltip: 'Último',
+            child: Icon(Icons.last_page),
           ),
         ],
       ),
@@ -189,7 +193,7 @@ class Paciente {
   String nome;
   double peso;
   double altura;
-  double _imc;
+  double _imc = 0;
 
   Paciente(this.peso, this.altura, [this.nome]) {
     this._imc = 1.3 * peso / pow(altura, 2.5);
