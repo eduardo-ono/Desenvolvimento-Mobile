@@ -98,57 +98,88 @@ class _MyHomePageState extends State<MyHomePage> {
                   // hintText: "Nome do paciente",
                 ),
                 style: TextStyle(fontSize: _fontSize),
+                onChanged: (text) {
+                  _nome = text;
+                },
               ),
             ),
             // --- Peso do Paciente ---
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "Peso (kg)",
-                // hintText: 'Peso do paciente (kg)',
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Peso (kg)",
+                  // hintText: 'Peso do paciente (kg)',
+                ),
+                style: TextStyle(fontSize: _fontSize),
+                onChanged: (text) {
+                  _peso = double.parse(text);
+                },
               ),
-              style: TextStyle(fontSize: _fontSize),
-              onChanged: (text) {
-                _peso = double.parse(text);
-              },
             ),
             // --- Altura do Paciente ---
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "Altura (m)",
-                hintText: "Altura (m)",
-              ),
-              style: TextStyle(fontSize: _fontSize),
-              onChanged: (text) {
-                _altura = double.parse(text);
-              },
-            ),
-            // IMC
-            Container(
-              margin: EdgeInsets.fromLTRB(0, 30, 0, 30),
-              padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
-              color: Colors.blueGrey,
-              child: Text(
-                "IMC = ${_imc.toStringAsFixed(1)}",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: _fontSize,
+            Padding(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 30),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Altura (m)",
+                  hintText: "Altura (m)",
                 ),
+                style: TextStyle(fontSize: _fontSize),
+                onChanged: (text) {
+                  _altura = double.parse(text);
+                },
               ),
             ),
+            // Saída
             RaisedButton(
               child: Text(
                 "Calcular IMC",
                 style: TextStyle(fontSize: _fontSize),
               ),
               onPressed: _calcularIMC,
-            )
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 30, 0, 30),
+              padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
+              color: Colors.yellow,
+              child: Text(
+                " Nome: $_nome ${lista.length} \n Peso: ${_peso.toStringAsFixed(1)} \n Altura: ${_altura.toStringAsFixed(2)} \n IMC: ${_imc.toStringAsFixed(1)}",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: _fontSize,
+                ),
+              ),
+            ),
           ],
         ),
       ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          new FloatingActionButton(
+            onPressed: null,
+            tooltip: 'Increment',
+            child: Text(
+              '<',
+              style: TextStyle(fontSize: 35),
+            ),
+          ),
+          new FloatingActionButton(
+            onPressed: null,
+            tooltip: 'Increment',
+            child: Text(
+              '>',
+              style: TextStyle(fontSize: 35),
+            ),
+          ),
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
