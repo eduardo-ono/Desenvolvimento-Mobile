@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text(title),
         ),
-        body: Image.network(
-          'https://img.youtube.com/vi/YXtiDUSaNQE/mqdefault.jpg',
+        body: Center(
+          child: Image.network(
+            'https://img.youtube.com/vi/YXtiDUSaNQE/mqdefault.jpg',
+          ),
         ),
       ),
-    );
+    ); // MaterialApp
   }
 }

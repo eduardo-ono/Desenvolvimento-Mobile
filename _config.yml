@@ -1,1 +1,6 @@
 theme: jekyll-theme-slate
+title: "Flutter"
+js: 
+  - defer: true
+    url: https://dartpad.dev/experimental/inject_embed.dart.js
+    
