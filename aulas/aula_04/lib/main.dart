@@ -50,22 +50,46 @@ class _MyHomePageState extends State<MyHomePage> {
   double _altura = 0.0;
   double _imc = 0.0;
   double _fontSize = 20.0;
+  int _index = 0;
+  String _display = "";
 
-  void _calcularIMC() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      if (_peso > 0 && _altura > 0) {
-        var paciente = Paciente(_peso, _altura, _nome);
-        _imc = paciente._imc;
-        lista.add(paciente);
-      } else {
-        _imc = 0.0;
-      }
-    });
+  final nomeController = TextEditingController();
+  final pesoController = TextEditingController();
+  final alturaController = TextEditingController();
+
+  // Construtor
+  _MyHomePageState();
+
+  // Métodos
+  void _cadastrarPaciente() {
+    _imc = 0.0;
+    _nome = nomeController.text;
+    _peso = double.parse(pesoController.text);
+    _altura = double.parse(alturaController.text);
+    if (_peso > 0 && _altura > 0) {
+      var paciente = Paciente(_peso, _altura, _nome);
+      _imc = paciente._imc;
+      lista.add(paciente);
+      _index = lista.length - 1;
+      nomeController.text = "";
+      pesoController.text = "";
+      alturaController.text = "";
+      _exibirRegistro(_index);
+    }
+  }
+
+  void _exibirRegistro(int index) {
+    if (index >= 0 && index < lista.length) {
+      setState(() {
+        _index = index;
+        _nome = lista[index]._nome;
+        _peso = lista[index]._peso;
+        _imc = lista[index]._imc;
+        _display = "Nome: $_nome \nPeso: ${_peso.toStringAsFixed(1)} \n"
+            "Altura: ${_altura.toStringAsFixed(2)} \n"
+            "IMC: ${_imc.toStringAsFixed(1)}";
+      });
+    } // if
   }
 
   @override
@@ -90,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             // --- Nome do Paciente ---
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(5),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -98,14 +122,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   // hintText: "Nome do paciente",
                 ),
                 style: TextStyle(fontSize: _fontSize),
-                onChanged: (text) {
-                  _nome = text;
-                },
+                controller: nomeController,
               ),
             ),
             // --- Peso do Paciente ---
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(5),
               child: TextField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
@@ -114,14 +136,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   // hintText: 'Peso do paciente (kg)',
                 ),
                 style: TextStyle(fontSize: _fontSize),
-                onChanged: (text) {
-                  _peso = double.parse(text);
-                },
+                controller: pesoController,
               ),
             ),
             // --- Altura do Paciente ---
             Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 10, 30),
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 20),
               child: TextField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
@@ -130,25 +150,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   hintText: "Altura (m)",
                 ),
                 style: TextStyle(fontSize: _fontSize),
-                onChanged: (text) {
-                  _altura = double.parse(text);
-                },
+                controller: alturaController,
               ),
             ),
             // Saída
             RaisedButton(
               child: Text(
-                "Calcular IMC",
+                "Cadastrar Paciente",
                 style: TextStyle(fontSize: _fontSize),
               ),
-              onPressed: _calcularIMC,
+              onPressed: _cadastrarPaciente,
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
-              padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 30),
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
               color: Colors.yellow,
               child: Text(
-                " Nome: $_nome ${lista.length} \n Peso: ${_peso.toStringAsFixed(1)} \n Altura: ${_altura.toStringAsFixed(2)} \n IMC: ${_imc.toStringAsFixed(1)}",
+                _display,
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: _fontSize,
@@ -162,22 +180,26 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           FloatingActionButton(
-            onPressed: null,
+            onPressed: () => _exibirRegistro(0),
             tooltip: 'Primeiro',
             child: Icon(Icons.first_page),
           ),
-          FloatingActionButton(
-            onPressed: null,
-            tooltip: 'Anterior',
-            child: Icon(Icons.navigate_before),
+          Padding(
+            padding: EdgeInsets.all(5),
+            child: FloatingActionButton(
+              onPressed: () => _exibirRegistro(_index - 1),
+              tooltip: 'Anterior',
+              child: Icon(Icons.navigate_before),
+            ),
           ),
+          Text("${_index + 1} / ${lista.length}"),
           FloatingActionButton(
-            onPressed: null,
+            onPressed: () => _exibirRegistro(_index + 1),
             tooltip: 'Próximo',
             child: Icon(Icons.navigate_next),
           ),
           FloatingActionButton(
-            onPressed: null,
+            onPressed: () => _exibirRegistro(lista.length - 1),
             tooltip: 'Último',
             child: Icon(Icons.last_page),
           ),
@@ -190,12 +212,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
 class Paciente {
   // Atributos
-  String nome;
-  double peso;
-  double altura;
+  String _nome;
+  double _peso;
+  double _altura;
   double _imc = 0;
 
-  Paciente(this.peso, this.altura, [this.nome]) {
-    this._imc = 1.3 * peso / pow(altura, 2.5);
+  Paciente(this._peso, this._altura, [this._nome]) {
+    this._imc = 1.3 * _peso / pow(_altura, 2.5);
   }
 }
