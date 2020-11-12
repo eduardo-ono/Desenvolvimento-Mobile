@@ -36,7 +36,7 @@ class MyHomePage extends StatefulWidget {
   // how it looks.
   // Fields in a Widget subclass are always marked "final".
 
-  final String title;
+  final String tithttps://medium.com/@maffan/how-to-create-a-side-menu-in-flutter-a2df7833fdfble;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
