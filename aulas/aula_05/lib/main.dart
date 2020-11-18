@@ -279,7 +279,7 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => TelaCadastrarPaciente()),
+                    builder: (context) => TelaCadastrarPaciente(lista)),
               );
             },
           ),
@@ -423,15 +423,135 @@ class _TelaBuscarPorPacienteState extends State<TelaBuscarPorPaciente> {
 // ----------------------------------------------------------------------------
 
 class TelaCadastrarPaciente extends StatefulWidget {
+  final List<Paciente> lista;
+
+  // Construtor
+  TelaCadastrarPaciente(this.lista);
+
   @override
-  _TelaCadastrarPacienteState createState() => _TelaCadastrarPacienteState();
+  _TelaCadastrarPacienteState createState() =>
+      _TelaCadastrarPacienteState(lista);
 }
 
 class _TelaCadastrarPacienteState extends State<TelaCadastrarPaciente> {
+  // Atributos
+  final List<Paciente> lista;
+  String _nome = "";
+  double _peso = 0.0;
+  double _altura = 0.0;
+  double _imc = 0.0;
+  double _fontSize = 20.0;
+  final nomeController = TextEditingController();
+  final pesoController = TextEditingController();
+  final alturaController = TextEditingController();
+  final imcController = TextEditingController();
+
+  // Construtor
+  _TelaCadastrarPacienteState(this.lista);
+
+  // Métodos
+  void _cadastrarPaciente() {
+    _imc = 0.0;
+    _nome = nomeController.text;
+    _peso = double.parse(pesoController.text);
+    _altura = double.parse(alturaController.text);
+    if (_peso > 0 && _altura > 0) {
+      var paciente = Paciente(_peso, _altura, _nome);
+      // _imc = paciente._imc;
+      lista.add(paciente);
+      // _index = lista.length - 1;
+      nomeController.text = "";
+      pesoController.text = "";
+      alturaController.text = "";
+      alturaController.text = "${paciente._imc}";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Cadastrar Paciente (???)"),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: Text(
+                "Dados do Paciente:",
+                style: TextStyle(fontSize: _fontSize),
+              ),
+            ),
+            // --- Nome do Paciente ---
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Nome completo",
+                  // hintText: "Nome do paciente",
+                ),
+                style: TextStyle(fontSize: _fontSize),
+                controller: nomeController,
+              ),
+            ),
+            // --- Peso do Paciente ---
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Peso (kg)",
+                  // hintText: 'Peso do paciente (kg)',
+                ),
+                style: TextStyle(fontSize: _fontSize),
+                controller: pesoController,
+              ),
+            ),
+            // --- Altura do Paciente ---
+            Padding(
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 20),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Altura (m)",
+                  hintText: "Altura (m)",
+                ),
+                style: TextStyle(fontSize: _fontSize),
+                controller: alturaController,
+              ),
+            ),
+            // --- IMC (desabilitado) ---
+            Padding(
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 20),
+              child: TextField(
+                enabled: false,
+                // keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "IMC",
+                  hintText: "IMC",
+                ),
+                style: TextStyle(fontSize: _fontSize),
+                controller: imcController,
+              ),
+            ),
+            // Saída
+            RaisedButton(
+              child: Text(
+                "Cadastrar Paciente",
+                style: TextStyle(fontSize: _fontSize),
+              ),
+              onPressed: _cadastrarPaciente,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
