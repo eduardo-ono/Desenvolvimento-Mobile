@@ -16,8 +16,14 @@ class Paciente {
   double _altura;
   double _imc = 0;
 
+  // Construtor
   Paciente(this._peso, this._altura, [this._nome]) {
-    this._imc = 1.3 * _peso / pow(_altura, 2.5);
+    this._imc = calcularImc();
+  }
+
+  // Métodos
+  double calcularImc() {
+    return 1.3 * _peso / pow(_altura, 2.5);
   }
 }
 
@@ -83,20 +89,26 @@ class _HomePageState extends State<HomePage> {
           itemCount: lista.length,
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
-              title: Text("${lista[index]._nome}"),
+              title: Text(
+                "${lista[index]._nome}",
+                style: TextStyle(fontSize: 18.0),
+              ),
+              onTap: () {},
             );
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: _atualizarTela,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma ma
+        tooltip: 'Atualizar',
+        child: Icon(Icons.update),
+      ),
     );
   }
 }
 
 class NavDrawer extends StatelessWidget {
+  // Atributos
   final List lista;
+  final double _fontSize = 17.0;
 
   // Construtor
   NavDrawer(this.lista);
@@ -116,49 +128,64 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.blueGrey),
           ),
           ListTile(
-            leading: Icon(Icons.person_add),
-            title: Text("Informações do Paciente"),
+            leading: Icon(Icons.person),
+            title: Text(
+              "Informações do Paciente",
+              style: TextStyle(fontSize: _fontSize),
+            ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pop(context); // Fecha o Drawer
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => TelaInformacoesDoPaciente(lista)),
+                  builder: (context) => TelaInformacoesDoPaciente(lista),
+                ),
               );
             },
           ),
           ListTile(
             leading: Icon(Icons.person_search),
-            title: Text("Busca por Paciente"),
+            title: Text(
+              "Buscar por um Paciente",
+              style: TextStyle(fontSize: _fontSize),
+            ),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => TelaBuscarPorPaciente()),
+                  builder: (context) => TelaBuscarPorPaciente(),
+                ),
               );
             },
           ),
           ListTile(
             leading: Icon(Icons.person_add_alt_1_sharp),
-            title: Text("Cadastrar Paciente"),
+            title: Text(
+              "Cadastrar um Novo Paciente",
+              style: TextStyle(fontSize: _fontSize),
+            ),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => TelaCadastrarPaciente(lista)),
+                  builder: (context) => TelaCadastrarPaciente(lista),
+                ),
               );
             },
           ),
           Container(
             padding: EdgeInsets.all(20.0),
           ),
-          Container(
+          Align(
             alignment: Alignment.bottomCenter,
             child: ListTile(
-              leading: Icon(Icons.person_search),
-              title: Text("Sobre"),
+              leading: Icon(Icons.face),
+              title: Text(
+                "Sobre",
+                style: TextStyle(fontSize: _fontSize),
+              ),
               onTap: () => {},
             ),
           ),
@@ -187,7 +214,7 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
   final List lista;
   Paciente paciente;
   int index = -1;
-  double _fontSize = 20.0;
+  double _fontSize = 18.0;
   final nomeController = TextEditingController();
   final pesoController = TextEditingController();
   final alturaController = TextEditingController();
@@ -199,16 +226,14 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
     if (lista.length > 0) {
       index = 0;
       paciente = lista[0];
-      _exibirRegistro(index);
+      nomeController.text = paciente._nome;
+      pesoController.text = paciente._peso.toString();
+      alturaController.text = paciente._altura.toString();
+      imcController.text = paciente._imc.toStringAsFixed(1);
     }
   }
 
   // Métodos
-  void _habilitarEdicao() {
-    _edicaoHabilitada = true;
-    setState(() {});
-  }
-
   void _exibirRegistro(index) {
     if (index >= 0 && index < lista.length) {
       this.index = index;
@@ -216,8 +241,8 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
       nomeController.text = paciente._nome;
       pesoController.text = paciente._peso.toString();
       alturaController.text = paciente._altura.toString();
-      imcController.text = paciente._imc.toString();
-      // setState(() {});
+      imcController.text = paciente._imc.toStringAsFixed(1);
+      setState(() {});
     }
   }
 
@@ -227,7 +252,7 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
       lista[index]._nome = nomeController.text;
       lista[index]._peso = pesoController.text;
       lista[index]._altura = alturaController.text;
-      lista[index]._imc = imcController.text;
+      lista[index]._imc = lista[index].calcularImc();
       setState(() {});
     }
   }
@@ -256,11 +281,17 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            FloatingActionButton(
-              heroTag: null,
-              onPressed: () => _habilitarEdicao(),
-              tooltip: 'Primeiro',
-              child: Text("Hab. Edição"),
+            Align(
+              alignment: Alignment.topRight,
+              child: FloatingActionButton(
+                heroTag: null,
+                onPressed: () {
+                  _edicaoHabilitada = true;
+                  setState(() {});
+                },
+                tooltip: 'Primeiro',
+                child: Text("Hab. Edição"),
+              ),
             ),
             Padding(
               padding: EdgeInsets.all(5),
@@ -331,39 +362,41 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
               "[${index + 1}/${lista.length}]",
               style: TextStyle(fontSize: 15.0),
             ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <FloatingActionButton>[
+                  FloatingActionButton(
+                    heroTag: null,
+                    onPressed: () => _exibirRegistro(0),
+                    tooltip: 'Primeiro',
+                    child: Icon(Icons.first_page),
+                  ),
+                  FloatingActionButton(
+                    heroTag: null,
+                    onPressed: () => _exibirRegistro(index - 1),
+                    tooltip: 'Primeiro',
+                    child: Icon(Icons.navigate_before),
+                  ),
+                  FloatingActionButton(
+                    heroTag: null,
+                    onPressed: () => _exibirRegistro(index + 1),
+                    tooltip: 'Primeiro',
+                    child: Icon(Icons.navigate_next),
+                  ),
+                  FloatingActionButton(
+                    heroTag: null,
+                    onPressed: () => _exibirRegistro(lista.length - 1),
+                    tooltip: 'Primeiro',
+                    child: Icon(Icons.last_page),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <FloatingActionButton>[
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: () => _exibirRegistro(0),
-            tooltip: 'Primeiro',
-            child: Icon(Icons.first_page),
-          ),
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: () => _exibirRegistro(index - 1),
-            tooltip: 'Primeiro',
-            child: Icon(Icons.navigate_before),
-          ),
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: () => _exibirRegistro(index + 1),
-            tooltip: 'Primeiro',
-            child: Icon(Icons.navigate_next),
-          ),
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: () => _exibirRegistro(lista.length - 1),
-            tooltip: 'Primeiro',
-            child: Icon(Icons.last_page),
-          ),
-        ],
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
@@ -381,7 +414,7 @@ class _TelaBuscarPorPacienteState extends State<TelaBuscarPorPaciente> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("Buscar por Paciente")),
     );
   }
 }
