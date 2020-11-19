@@ -30,8 +30,10 @@ class MyApp extends StatelessWidget {
 
   // Construtor
   MyApp() {
-    Paciente exemplo = Paciente(68.0, 1.70, "Fulano de Tal");
-    lista.add(exemplo);
+    Paciente paciente1 = Paciente(68.0, 1.70, "Fulano de Tal");
+    Paciente paciente2 = Paciente(73.0, 1.79, "Ciclano de Tal");
+    lista.add(paciente1);
+    lista.add(paciente2);
   }
 
   @override
@@ -167,7 +169,7 @@ class NavDrawer extends StatelessWidget {
 }
 
 //-----------------------------------------------------------------------------
-// Tela: Informações do Paciente
+// Tela Informações do Paciente
 //-----------------------------------------------------------------------------
 
 class TelaInformacoesDoPaciente extends StatefulWidget {
@@ -185,18 +187,47 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
   final List lista;
   Paciente paciente;
   int index = -1;
+  double _fontSize = 20.0;
+  final nomeController = TextEditingController();
+  final pesoController = TextEditingController();
+  final alturaController = TextEditingController();
+  final imcController = TextEditingController();
+  bool _edicaoHabilitada = false;
 
   // Construtor
   _TelaInformacoesDoPaciente(this.lista) {
     if (lista.length > 0) {
       index = 0;
       paciente = lista[0];
+      _exibirRegistro(index);
     }
+  }
+
+  // Métodos
+  void _habilitarEdicao() {
+    _edicaoHabilitada = true;
+    setState(() {});
   }
 
   void _exibirRegistro(index) {
     if (index >= 0 && index < lista.length) {
+      this.index = index;
       paciente = lista[index];
+      nomeController.text = paciente._nome;
+      pesoController.text = paciente._peso.toString();
+      alturaController.text = paciente._altura.toString();
+      imcController.text = paciente._imc.toString();
+      // setState(() {});
+    }
+  }
+
+  void _atualizarDados() {
+    if (index >= 0 && index < lista.length) {
+      _edicaoHabilitada = false;
+      lista[index]._nome = nomeController.text;
+      lista[index]._peso = pesoController.text;
+      lista[index]._altura = alturaController.text;
+      lista[index]._imc = imcController.text;
       setState(() {});
     }
   }
@@ -219,49 +250,120 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
       );
     }
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Teste"),
-      ),
+      appBar: AppBar(title: Text(titulo)),
       body: Container(
         padding: EdgeInsets.all(16.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(paciente._nome),
-            Text("${paciente._peso}"),
-            Text("${paciente._altura}"),
-            Text("${paciente._imc}"),
-            Row(
-              children: <FloatingActionButton>[
-                FloatingActionButton(
-                  heroTag: null,
-                  onPressed: () => _exibirRegistro(0),
-                  tooltip: 'Primeiro',
-                  child: Icon(Icons.first_page),
+            FloatingActionButton(
+              heroTag: null,
+              onPressed: () => _habilitarEdicao(),
+              tooltip: 'Primeiro',
+              child: Text("Hab. Edição"),
+            ),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                enabled: _edicaoHabilitada,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Nome completo",
+                  // hintText: "Nome do paciente",
                 ),
-                FloatingActionButton(
-                  heroTag: null,
-                  onPressed: () => _exibirRegistro(0),
-                  tooltip: 'Primeiro',
-                  child: Icon(Icons.navigate_before),
+                style: TextStyle(fontSize: _fontSize),
+                controller: nomeController,
+              ),
+            ),
+            // --- Peso do Paciente ---
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                enabled: _edicaoHabilitada,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Peso (kg)",
+                  // hintText: 'Peso do paciente (kg)',
                 ),
-                FloatingActionButton(
-                  heroTag: null,
-                  onPressed: () => _exibirRegistro(0),
-                  tooltip: 'Primeiro',
-                  child: Icon(Icons.navigate_next),
+                style: TextStyle(fontSize: _fontSize),
+                controller: pesoController,
+              ),
+            ),
+            // --- Altura do Paciente ---
+            Padding(
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 20),
+              child: TextField(
+                enabled: _edicaoHabilitada,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Altura (m)",
+                  hintText: "Altura (m)",
                 ),
-                FloatingActionButton(onPressed: null),
-                FloatingActionButton(
-                  heroTag: null,
-                  onPressed: () => _exibirRegistro(0),
-                  tooltip: 'Primeiro',
-                  child: Icon(Icons.last_page),
+                style: TextStyle(fontSize: _fontSize),
+                controller: alturaController,
+              ),
+            ),
+            // --- IMC (desabilitado) ---
+            Padding(
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 20),
+              child: TextField(
+                enabled: false,
+                // keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "IMC",
+                  hintText: "IMC",
                 ),
-              ],
+                style: TextStyle(fontSize: _fontSize),
+                controller: imcController,
+              ),
+            ),
+            RaisedButton(
+              child: Text(
+                "Atualizar Dados",
+                style: TextStyle(fontSize: _fontSize),
+              ),
+              onPressed: _atualizarDados,
+            ),
+            Text(
+              "[${index + 1}/${lista.length}]",
+              style: TextStyle(fontSize: 15.0),
             ),
           ],
         ),
       ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <FloatingActionButton>[
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () => _exibirRegistro(0),
+            tooltip: 'Primeiro',
+            child: Icon(Icons.first_page),
+          ),
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () => _exibirRegistro(index - 1),
+            tooltip: 'Primeiro',
+            child: Icon(Icons.navigate_before),
+          ),
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () => _exibirRegistro(index + 1),
+            tooltip: 'Primeiro',
+            child: Icon(Icons.navigate_next),
+          ),
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () => _exibirRegistro(lista.length - 1),
+            tooltip: 'Primeiro',
+            child: Icon(Icons.last_page),
+          ),
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
@@ -327,7 +429,7 @@ class _TelaCadastrarPacienteState extends State<TelaCadastrarPaciente> {
       nomeController.text = "";
       pesoController.text = "";
       alturaController.text = "";
-      alturaController.text = "${paciente._imc}";
+      imcController.text = "${paciente._imc}";
     }
   }
 
