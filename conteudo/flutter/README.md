@@ -134,6 +134,13 @@ Aguardar a instalação do Flutter.
 
 > * Para executar um projeto, teclar `Ctrl+F5` (Run Without Debugging)
 
+> * Para "resetar" um projeto, executar os comandos:
+>
+> ```
+> flutter clean
+> flutter packages get
+> ```
+
 <br>
 
 ## Fundamentos
