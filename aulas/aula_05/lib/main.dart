@@ -32,7 +32,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final List<Paciente> lista = [];
+  final List<Paciente> lista = []; // Lista vazia
 
   // Construtor
   MyApp() {
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Aula de Flutter",
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(lista),
@@ -250,8 +250,8 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
     if (index >= 0 && index < lista.length) {
       _edicaoHabilitada = false;
       lista[index]._nome = nomeController.text;
-      lista[index]._peso = pesoController.text;
-      lista[index]._altura = alturaController.text;
+      lista[index]._peso = double.parse(pesoController.text);
+      lista[index]._altura = double.parse(alturaController.text);
       lista[index]._imc = lista[index].calcularImc();
       setState(() {});
     }
@@ -455,14 +455,14 @@ class _TelaCadastrarPacienteState extends State<TelaCadastrarPaciente> {
     _peso = double.parse(pesoController.text);
     _altura = double.parse(alturaController.text);
     if (_peso > 0 && _altura > 0) {
-      var paciente = Paciente(_peso, _altura, _nome);
+      var paciente = Paciente(_peso, _altura, _nome); // Cria um novo objeto
       // _imc = paciente._imc;
       lista.add(paciente);
       // _index = lista.length - 1;
       nomeController.text = "";
       pesoController.text = "";
       alturaController.text = "";
-      imcController.text = "${paciente._imc}";
+      imcController.text = "${paciente._imc.toStringAsFixed(1)}";
     }
   }
 
