@@ -10,7 +10,7 @@ Versão HTML: https://eduardo-ono.github.io/desenvolvimento-mobile/conteudo/flut
 
 ## Descrição
 
-Este markdown contém links para pequenos programas em Flutter, possibilitando um melhor entendimento de conceitos pontuais do uso dos elementos do Flutter. Os programas disponibilizados através dos links serão exibidos no Dartpad.
+> Este markdown contém links para pequenos programas em Flutter, possibilitando um melhor entendimento de conceitos pontuais do uso de elementos do Flutter. Os programas disponibilizados através dos links serão exibidos no Dartpad.
 
 <details>
     <summary>Exibir um arquivo de imagem da Web</summary>

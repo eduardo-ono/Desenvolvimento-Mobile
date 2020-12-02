@@ -10,6 +10,12 @@ Prof. Eduardo Ono
 
 <br>
 
+## História do Android
+
+* [TecMundo] [A história do Android - TecMundo](https://www.youtube.com/watch?v=5K4pEk19nhs) (YouTube, 9:12, Ago/2017)
+
+<br>
+
 ## Vídeos Recomendados
 
 * [Google Developers] [How is Flutter different for app development](https://www.youtube.com/watch?v=l-YO9CmaSUM) (YouTube, 4:04, Set/2019)
