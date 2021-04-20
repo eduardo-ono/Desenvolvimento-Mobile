@@ -37,7 +37,7 @@ Prof. Eduardo Ono
 >
 > _A atualização dos dados não está funcionando. Sem validação dos dados de entrada (número de semanas)._
 
-> * Gabrile Pereira - https://github.com/GabrielPereiraLazarin/GabrielPereiraLazarin/blob/master/provafluter.txt
+> * Gabril Pereira - https://github.com/GabrielPereiraLazarin/GabrielPereiraLazarin/blob/master/provafluter.txt
 >
 > _OK. Poderia ter implementado ano atual do sistema._
 
@@ -63,7 +63,7 @@ Prof. Eduardo Ono
 >
 > _OK._
 
-> * Matheus Azzoni
+> * Matheus Azzoni - https://github.com/matheusAzzoni/app_DESENVOLVIMENTO-PARA-DISPOSITIVO-M-VEL
 >
 >
 
@@ -71,9 +71,9 @@ Prof. Eduardo Ono
 >
 > _OK._
 
-> * Maykon Bill
+> * Maykon Bill - https://github.com/Maykonbill/ProjectFlutterOno.github.io
 >
->
+> _Sem validação na entrada do preço na tela Informações. Sem as casas decimais dos centavos._
 
 > * Rafael Junio Domingos Bicalho - https://github.com/rafaeljbicalho/my-movies-tv-shows
 >

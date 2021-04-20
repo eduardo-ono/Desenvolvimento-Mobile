@@ -166,3 +166,5 @@ Aguardar a instalação do Flutter.
 
 * [ZAMMETTI_2019] ZAMMETTI, Frank. Practical Flutter, 2019.
 * [WINDMILL_2020] WINDMILL, Eric. Flutter in Action, 2020.
+
+<br>

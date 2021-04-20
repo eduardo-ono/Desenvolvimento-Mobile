@@ -12,6 +12,14 @@ Prof. Eduardo Ono
 
 <br>
 
+## Vídeos Recomendados
+
+### Desenvolvimento Android em Java com Android Studio
+
+* [Área Tech Brasil](https://www.youtube.com/channel/UCpOSu4F9cqSjh1OgbmOT5cQ)
+
+<br>
+
 ## Bibliografia
 
 *

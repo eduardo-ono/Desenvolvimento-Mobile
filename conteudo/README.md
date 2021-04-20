@@ -6,10 +6,6 @@ Prof. Eduardo Ono
 
 <br>
 
-## Overview
-
-<br>
-
 ## Conteúdo Programático
 
 <details>
@@ -66,14 +62,16 @@ No Terminal, entrar com o comando:
 
 <br>
 
-> ## Cursos "Completos"
+## Cursos "Completos"
 
 <br>
 
-> ## Dicas para a Carreira do Profissional
+## Dicas para a Carreira do Profissional
 
 * https://www.contabilizei.com.br
 
 <br>
 
-> ## Bibliografia
+## Bibliografia
+
+<br>

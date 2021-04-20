@@ -1,13 +1,17 @@
-# Desenvolvimento Mobile > React Native
+### Desenvolvimento Mobile
+
+# React Native
 
 Prof. Eduardo Ono
 
 <br>
 
 ## Overview
+
 <br>
 
 ## Ambiente de Desenvolvimento
+
 <br>
 
 * [Link](ambiente-de-desenvolvimento.md)
@@ -15,6 +19,7 @@ Prof. Eduardo Ono
 <br>
 
 ## Conceitos
+
 <br>
 
 * [Código Fonte TV] [React Native // Dicionário do Programador](https://www.youtube.com/watch?v=mqltv3kFdgE) (YouTube, 8:28, Set/2019)
@@ -22,6 +27,7 @@ Prof. Eduardo Ono
 <br>
 
 ## Fundamentos
+
 <br>
 
 > ### Introdução
@@ -70,8 +76,10 @@ Prof. Eduardo Ono
 ## Vídeos Recomendados
 
 * [Academind] [React Native vs Flutter (Jul/2018)](https://www.youtube.com/watch?v=bnYJRYFsrSw) (YouTube, 33:40)
+* [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg)
 
 <br>
 
 ## Bibliografia
+
 <br>
