@@ -12,23 +12,19 @@ Prof. Eduardo Ono
 
 ## Ambiente de Desenvolvimento
 
-<br>
-
 * [Link](ambiente-de-desenvolvimento.md)
 
 <br>
 
 ## Conceitos
 
-<br>
-
-* [Código Fonte TV] [React Native // Dicionário do Programador](https://www.youtube.com/watch?v=mqltv3kFdgE) (YouTube, 8:28, Set/2019)
+| Thumb | Descrição |
+|  :-:  | --- |
+| ![img](https://img.youtube.com/vi/mqltv3kFdgE/default.jpg) | [Código Fonte TV]<br>[**React Native // Dicionário do Programador**](https://www.youtube.com/watch?v=mqltv3kFdgE) (YouTube, 8:28, Set/2019)
 
 <br>
 
 ## Fundamentos
-
-<br>
 
 > ### Introdução
 > * [Rocketseat] [Iniciando com React Native em 2019](https://www.youtube.com/watch?v=XcU9GEUZTQA) (YouTube, 17:40, Mai/2018)
@@ -38,7 +34,7 @@ Prof. Eduardo Ono
     0:02:20 Prerequisites
     0:02:58 What is React Native?
     0:04:33 Expo
-    0:06:19 Setting up the development environment 
+    0:06:19 Setting up the development environment
     0:09:17 Your First React Native App
     0:14:38 Running on an iOS simulator
     0:18:02 Running on an Android emulator
@@ -61,10 +57,10 @@ Prof. Eduardo Ono
     1:22:22 Detecting orientation changes
     1:27:39 Flexbox
     1:30:56 flexDirection
-    1:32:48 justifyContent, alignItems and alignSelf 
+    1:32:48 justifyContent, alignItems and alignSelf
     1:37:22 flexWrap and alignContent
-    1:40:22 flexBasis, flexGrow and flexShrink 
-    1:43:07 Absolute and Relative Positioning 
+    1:40:22 flexBasis, flexGrow and flexShrink
+    1:43:07 Absolute and Relative Positioning
     1:45:59 Exercises
     1:46:58 Welcome Screen
     1:57:55 View Image Screen
@@ -75,7 +71,11 @@ Prof. Eduardo Ono
 
 ## Vídeos Recomendados
 
-* [Academind] [React Native vs Flutter (Jul/2018)](https://www.youtube.com/watch?v=bnYJRYFsrSw) (YouTube, 33:40)
+| Thumb | Descrição |
+|  :-:  | --- |
+| ![img](https://img.youtube.com/vi/Hf4MJH0jDb4/default.jpg) | [Traversy Media]<br>[**React Native Crash Course 2020**](https://www.youtube.com/watch?v=Hf4MJH0jDb4) (YouTube, 51:27, Fev/2020)
+| ![img](https://img.youtube.com/vi/bnYJRYFsrSw/default.jpg) | [Academind]<br>[**React Native vs Flutter)**](https://www.youtube.com/watch?v=bnYJRYFsrSw) (YouTube, 33:40, Jul/2018)
+
 * [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg)
 
 <br>
