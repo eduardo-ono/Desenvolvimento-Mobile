@@ -34,6 +34,49 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 * [ ] Instalar a extensão Flutter [Dart Code] no VS Code
 * [ ] Instalar o Flutter SDK
 
+## Instalando o Flutter SDK
+
+* Site do desenvolvedor:
+
+  https://flutter.dev/docs/get-started/install/windows/
+
+  ### Windows
+
+  * Baixar o arquivo .zip (~700 MB) e descompacar o arquivo em um diretório de sua preferência, por exemplo, `C:\src` ou `C:\`. Será criado um sub-diretório chamado flutter.
+
+    OBS.: **Não** instalar (descompactar) o flutter em um diretório que requer privilégios elevados, por exemplo, `C:\Arquivos de Programas`.
+
+  * Adicionar o diretório `<path>\flutter\bin` na variável de ambiente `Path` do Windows.
+
+  ### Ubuntu
+
+  * No Terminal, digitar o comando:
+
+    ```sh
+    sudo snap install flutter --classic
+    ```
+
+* Para verificar se a instalação do Flutter teve sucesso, digite no Terminal o comando:
+
+  ```
+  flutter --version
+  ```
+
+* Para verificar se todos os [requisitos para execução do flutter](./figuras/flutter-doctor-erros.png) estão instalados, digitar:
+
+  ```
+  flutter doctor
+
+  ```
+
+* Para **atualizar** o Flutter, abra o Terminal e digite o comando:
+
+  ```
+  flutter upgrade
+  ```
+
+<br>
+
 ## Configurando Variáveis de Ambiente no Windows
 
 * Na janela de pesquisa do Windows, digitar _variáveis_.

@@ -6,7 +6,13 @@ Prof. Eduardo Ono
 
 <br>
 
-## Overview
+## Sumário
+
+* ### Overview
+* ### Documentação
+* ### Ambiente de Desenvolvimento
+* ### Primeiros Passos com Flutter
+* ### Programação
 
 <br>
 
@@ -17,8 +23,6 @@ Prof. Eduardo Ono
 * Icons: [https://api.flutter.dev/flutter/material/Icons-class.html](https://api.flutter.dev/flutter/material/Icons-class.html)
 
 <br>
-
-## Ambiente de Desenvolvimento
 
 ### Ambiente Online
 
@@ -37,109 +41,39 @@ Prof. Eduardo Ono
 * Android Studio
 * Visual Studio Code + Extensões
 
-### Instalação do Flutter
-
-<details>
-  <summary>Instalando o Flutter SDK no Windows 10</summary>
-
-> Site do desenvolvedor:
-> * https://flutter.dev/docs/get-started/install/windows/
-
-> * Baixar o arquivo .zip (~700 MB) e descompactá-lo em um diretório de sua preferência, por exemplo, C:\src ou C:\. Será criado um sub-diretório chamado flutter.
->
-> Obs.: **Não** instalar (descompactar) o flutter em um diretório que requeira privilégios elevados, por exemplo, "C:\Arquivos de Programas".
-
-> * Adicionar o diretório `<path>\flutter\bin` na variável de ambiente `Path` do Windows.
-
-</details>
-
-<details>
-  <summary>Instalando o Flutter SDK no Ubuntu 20.04+</summary>
-
-* No Terminal, digitar o comando:
-
-```sh
-sudo snap install flutter --classic
-```
-
-* Após a instalação, digitar o comando:
-
-```sh
-flutter
-```
-
-Aguardar a instalação do Flutter.
-
-</details>
-
-### Configuração do Flutter (Windows e Ubuntu)
-
-#### Configurando as Dependências do Flutter
-
-> * Para verificar se o flutter está corretamente configurado, na janela do terminal digitar:
->
-> ```
-> flutter
-> ```
-
-> * Para verificar se todos os [requisitos para execução do flutter](figuras/flutter-doctor-erros.png) estão instalados, digitar:
->
-> ```
-> flutter doctor
-> ```
-
-> * No Android Studio, em [plugins](figuras/android-studio-plugins.png), pesquisar por [flutter](figuras/android-studio-plugins-flutter.png) e instalar. O plugin flutter possui como dependência o plugin dart. Será [solicitado](figuras/android-studio-plugins-dart.png) para você instalar este plugin também.
-
 <br>
-
-### Atualizando o Flutter
-
-> * No Terminal, digitar:
->
->  ```
->  flutter
->  ```
-
-> * Caso haja uma nova versão disponível, o flutter irá solicitar o seguinte comando:
->
->  ```
->  flutter upgrade
->  ```
-
-<br>
-
 
 ## Utilizando o Flutter
 
-> * Para criar um novo projeto, mudar para o diretório onde será criado o projeto e digitar:
->
-> ```
-> flutter create [--org <br.com.dominio>] <nome_do_projeto>
-> ```
->
-> `br.com.dominio` é o endereço de sua empresa (pode ser fictícia) na ordem contrária.
->
-> Exemplo:
->
-> ```
-> flutter create --org br.com.meudominio projeto_01
-> ```
->
-> Será criado um sub-diretório com o nome `nome_do_projeto`.
-> Caso não seja utilizado o parâmetro `--org`, será utilizado um nome de domínio padrão.
+ * Para criar um novo projeto, mudar para o diretório onde será criado o projeto e digitar:
+
+ ```
+ flutter create [--org <br.com.dominio>] <nome_do_projeto>
+ ```
+
+ `br.com.dominio` é o endereço de sua empresa (pode ser fictícia) na ordem contrária.
+
+  Exemplo:
+
+ ```
+ flutter create --org br.com.umbrella projeto_01
+ ```
+
+ Será criado um sub-diretório com o nome `nome_do_projeto`.
+ Caso não seja utilizado o parâmetro `--org`, será utilizado um nome de domínio padrão.
 
 ### Desenvolvendo um projeto Flutter no VS Code
 
-> * Instalar a extensão `Flutter` (Dark Code).
+* Instalar a extensão `Flutter` (Dark Code).
 
-> * Para executar um projeto, teclar `Ctrl+F5` (Run Without Debugging)
+* Para executar um projeto, teclar `Ctrl+F5` (Run Without Debugging)
 
-> * Para "resetar" um projeto, executar os comandos:
->
-> ```
-> flutter clean
-> flutter packages get
-> ```
+* Para "resetar" um projeto, executar os comandos:
+
+ ```
+ flutter clean
+ flutter packages get
+ ```
 
 <br>
 
@@ -164,7 +98,10 @@ Aguardar a instalação do Flutter.
 
 ## Bibliografia
 
-* [ZAMMETTI_2019] ZAMMETTI, Frank. Practical Flutter, 2019.
-* [WINDMILL_2020] WINDMILL, Eric. Flutter in Action, 2020.
+| Capa | Descrição |
+| :-:  | --- |
+| <img src="../../referencias/capas/zammetti_2019.jpg" width="150px"> | [ZAMMETTI_2019]<br><br>ZAMMETTI, Frank; **Practical Flutter - Improve your Mobile Development with Google's Latest Open-Source SDK**, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
+| <img src="../../referencias/capas/zammetti_2020.jpg" width="150px"> | [ZAMMETTI_2020]<br><br>ZAMMETTI, Frank; **Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google**, Novatec Editora, 2020.
+| <img src="../../referencias/capas/windmill_2020.jpg" width="150px"> | [WINDMILL_2020]<br><br>WINDMILL, Eric. **Flutter in Action**, Manning Publications, 2020.
 
 <br>
