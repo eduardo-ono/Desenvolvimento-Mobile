@@ -27,14 +27,12 @@ Prof. Eduardo Ono
 
   * Configuração do Ambiente de Desenvolvimento em Flutter
 
-  * Aplicativo "Hello World" em Flutter
+  * Exemplos de Aplicações em Flutter
+    * "Hello World": [exemplo_01](../conteudo/flutter/exemplos/exemplo_01/)
+    * Aplicativo "default" criado pelo `flutter create`: [exemplo_02](../conteudo/flutter/exemplos/exemplo_02/) \| [DartPad](https://dartpad.dev/embed-flutter.html?gh_owner=eduardo-ono&gh_repo=desenvolvimento-mobile&gh_path=aulas/aula_01/lib&theme=dark&run=true&split=75)
 
-  * **Projeto "default" do Flutter**
-    * Exemplos:
-      * Exemplo-01: [Projeto](./aula_01/) | [DartPad](https://dartpad.dev/embed-flutter.html?gh_owner=eduardo-ono&gh_repo=desenvolvimento-mobile&gh_path=aulas/aula_01/lib&theme=dark&run=true&split=75)
-    * Vídeo Aulas
-      * [Filipe Deschamps] [A Primeira Aula de Flutter Que Todo Mundo Deveria Ter](https://www.youtube.com/watch?v=J4BVaXkwmM8) (YouTube, 39:59, Fev/2021)
-  * **Versão "tradicional" do código do projeto "default" do Flutter**
+  * Vídeos de Apoio
+    * [Filipe Deschamps] [A Primeira Aula de Flutter Que Todo Mundo Deveria Ter](https://www.youtube.com/watch?v=J4BVaXkwmM8) (39:59, YouTube, Fev/2021)
 
   ---
   </section>
