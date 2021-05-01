@@ -37,7 +37,6 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
   https://developer.android.com/studio
 
-
 * Erros/problemas que podem ocorrer na instalação:
 
   * [Como corrigir erros no Android Studio?](https://areatechbrasil.com.br/como-corrigir-erros-no-android-studio/)
@@ -45,7 +44,7 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 * Vídeos de Apoio
 
   | Instalação do Android Studio |
-  ---
+  | --- |
   | [![](https://img.youtube.com/vi/_Uqf5_kN6Rw/default.jpg)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw "[Área Tech Brasil] Android Studio 4.0 - Como Instalar Corretamente \|\| 14:32, YouTube, Abr/2020")
   | Erros no Android Studio
   | [![](https://img.youtube.com/vi/ECIz_FnwuoI/default.jpg)](https://www.youtube.com/watch?v=ECIz_FnwuoI "[Área Tech Brasil] Como Corrigir Erros no Android Studio? \|\| 1:08:30, YouTube, Out/2020")
