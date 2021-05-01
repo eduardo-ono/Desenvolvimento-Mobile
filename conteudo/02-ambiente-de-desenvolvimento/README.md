@@ -44,7 +44,7 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 * Vídeos de Apoio
 
   | Instalação do Android Studio |
-  | --- |
+  | ---
   | [![](https://img.youtube.com/vi/_Uqf5_kN6Rw/default.jpg)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw "[Área Tech Brasil] Android Studio 4.0 - Como Instalar Corretamente \|\| 14:32, YouTube, Abr/2020")
   | Erros no Android Studio
   | [![](https://img.youtube.com/vi/ECIz_FnwuoI/default.jpg)](https://www.youtube.com/watch?v=ECIz_FnwuoI "[Área Tech Brasil] Como Corrigir Erros no Android Studio? \|\| 1:08:30, YouTube, Out/2020")
@@ -86,8 +86,8 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 * Vídeos de Apoio
 
   | Instação e configuração do Emulador Android |
-  | --- |
-  | [![](https://img.youtube.com/vi/YAkH6DcmbOY/default.jpg)](https://www.youtube.com/watch?v=YAkH6DcmbOY "[Tiago Aguiar] Emulador Android Como Instalar \|\| 7:34, YouTube, Mar/2020")  [![](https://img.youtube.com/vi/TXRBT8kXPW0/default.jpg)](https://www.youtube.com/watch?v=TXRBT8kXPW0 "[Área Tech Brasil] ANDROID STUDIO 4.1 - COMO CRIAR UM EMULADOR (2021) \|\| 14:50, YouTube, Mar/2021")
+  | ---
+  | [![](https://img.youtube.com/vi/YAkH6DcmbOY/default.jpg)](https://www.youtube.com/watch?v=YAkH6DcmbOY "[Tiago Aguiar] Emulador Android Como Instalar \|\| 7:34, YouTube, Mar/2020") - [![](https://img.youtube.com/vi/TXRBT8kXPW0/default.jpg)](https://www.youtube.com/watch?v=TXRBT8kXPW0 "[Área Tech Brasil] ANDROID STUDIO 4.1 - COMO CRIAR UM EMULADOR (2021) \|\| 14:50, YouTube, Mar/2021")
 
 <br>
 
@@ -96,7 +96,7 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 * Vídeos de Apoio
 
   | [![](https://img.youtube.com/vi/gErGLc4LDFQ/default.jpg)](https://www.youtube.com/watch?v=gErGLc4LDFQ "[Área Tech Brasil] Como Executar seus Aplicativos no Celular Android (O Guia definitivo) \|\| 5:08, YouTube, Mar/2021")
-  ---
+  | ---
 
 <br>
 
