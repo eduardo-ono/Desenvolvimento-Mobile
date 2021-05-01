@@ -29,20 +29,26 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
   Na BIOS, a opção para ativar/desativar a tecnologia de virtualização pode ter vários nomes diferentes: 'Virtualization', etc...
 
-
 <br>
 
 ## Instalação do Android Studio no Windows
 
-  > Site do desenvolvedor:
-  > * https://developer.android.com/studio
+* Site do desenvolvedor:
 
-  > Vídeo com o processo de instalação:
-  > * [Área Tech Brasil] [Android Studio 4.0 - Como Instalar Corretamente (Abr/2020)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw) (YouTube, 14:32)
+  https://developer.android.com/studio
 
-  > Erros/problemas que podem ocorrer na instalação:
-  > * [Como corrigir erros no Android Studio?](https://areatechbrasil.com.br/como-corrigir-erros-no-android-studio/)
-  > * [Área Tech Brasil] [Como Corrigir Erros no Android Studio?](https://www.youtube.com/watch?v=ECIz_FnwuoI) (YouTube, 1:08:30, Out/2020)
+
+* Erros/problemas que podem ocorrer na instalação:
+
+  * [Como corrigir erros no Android Studio?](https://areatechbrasil.com.br/como-corrigir-erros-no-android-studio/)
+
+* Vídeos de Apoio
+
+  | Instalação do Android Studio |
+  ---
+  | [![](https://img.youtube.com/vi/_Uqf5_kN6Rw/default.jpg)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw "[Área Tech Brasil] Android Studio 4.0 - Como Instalar Corretamente \|\| 14:32, YouTube, Abr/2020")
+  | Erros no Android Studio
+  | [![](https://img.youtube.com/vi/ECIz_FnwuoI/default.jpg)](https://www.youtube.com/watch?v=ECIz_FnwuoI "[Área Tech Brasil] Como Corrigir Erros no Android Studio? \|\| 1:08:30, YouTube, Out/2020")
 
 <br>
 
@@ -60,8 +66,8 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
 * Vídeos de Apoio
 
-  | [![](https://img.youtube.com/vi/x3nVHXv3oyw/default.jpg)](https://www.youtube.com/watch?v=x3nVHXv3oyw "[Rocking Support] How to Install Android Studio on Ubuntu 20.04 LTS \|\| 13:02, YouTube, Fev/2021")
-  | :-: |
+  | [![](https://img.youtube.com/vi/x3nVHXv3oyw/default.jpg)](https://www.youtube.com/watch?v=x3nVHXv3oyw "[ProgrammingKnowledge] How to Install Android Studio on Ubuntu 20.04 LTS \|\| 13:02, YouTube, Fev/2021")
+  ---
 
 <br>
 
@@ -80,11 +86,21 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
 * Vídeos de Apoio
 
-  | [![](https://img.youtube.com/vi/YAkH6DcmbOY/default.jpg)](https://www.youtube.com/watch?v=YAkH6DcmbOY "[Tiago Aguiar] Emulador Android Como Instalar \|\| 7:34, YouTube, Mar/2020")
-  | :-: |
+  | Instação e configuração do Emulador Android |
+  | --- |
+  | [![](https://img.youtube.com/vi/YAkH6DcmbOY/default.jpg)](https://www.youtube.com/watch?v=YAkH6DcmbOY "[Tiago Aguiar] Emulador Android Como Instalar \|\| 7:34, YouTube, Mar/2020")  [![](https://img.youtube.com/vi/TXRBT8kXPW0/default.jpg)](https://www.youtube.com/watch?v=TXRBT8kXPW0 "[Área Tech Brasil] ANDROID STUDIO 4.1 - COMO CRIAR UM EMULADOR (2021) \|\| 14:50, YouTube, Mar/2021")
 
 <br>
 
-> ## Bibliografia
+## Configurando um SmartPhone Android (físico) para Execução de Aplicativos em Desenvolvimento
+
+* Vídeos de Apoio
+
+  | [![](https://img.youtube.com/vi/gErGLc4LDFQ/default.jpg)](https://www.youtube.com/watch?v=gErGLc4LDFQ "[Área Tech Brasil] Como Executar seus Aplicativos no Celular Android (O Guia definitivo) \|\| 5:08, YouTube, Mar/2021")
+  ---
+
+<br>
+
+## Bibliografia
 
 <br>
