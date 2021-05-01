@@ -66,7 +66,7 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 * Vídeos de Apoio
 
   | [![](https://img.youtube.com/vi/x3nVHXv3oyw/default.jpg)](https://www.youtube.com/watch?v=x3nVHXv3oyw "[ProgrammingKnowledge] How to Install Android Studio on Ubuntu 20.04 LTS \|\| 13:02, YouTube, Fev/2021")
-  ---
+  | ---
 
 <br>
 
