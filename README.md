@@ -16,6 +16,8 @@ Prof. Eduardo Ono
  | 02 | 07/05 | Aplicação "IMC" em Flutter
  | 03 | 14/05 |
  | 04 | 21/05 |
+ | 05 | 28/05 |
+ | -- | 04/06 | 2a. Avaliação
 
 <br>
 

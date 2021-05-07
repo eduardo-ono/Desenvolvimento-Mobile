@@ -10,7 +10,20 @@ Versão HTML: https://eduardo-ono.github.io/desenvolvimento-mobile/conteudo/flut
 
 ## Descrição
 
-> Este markdown contém links para pequenos programas em Flutter, possibilitando um melhor entendimento de conceitos pontuais do uso de elementos do Flutter. Os programas disponibilizados através dos links serão exibidos no Dartpad.
+> Este markdown contém links para pequenos programas em Flutter, possibilitando um melhor entendimento de conceitos pontuais do uso dos elementos do Flutter. Os programas disponibilizados através dos links serão executados no DartPad.
+
+<details>
+  <summary>
+    <strong>Aplicativo "Hello World" mínimo</strong>
+  </summary>
+  <section markdown="1">
+
+fvfdv dfv fdsv fdv
+
+  </section>
+</details>
+
+---
 
 <details>
     <summary>Exibir um arquivo de imagem da Web</summary>

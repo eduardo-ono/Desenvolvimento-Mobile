@@ -99,7 +99,3 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
   | ---
 
 <br>
-
-## Bibliografia
-
-<br>
