@@ -17,7 +17,7 @@ Prof. Eduardo Ono
  | 03 | 14/05 |
  | 04 | 21/05 |
  | 05 | 28/05 |
- | -- | 04/06 | 2a. Avaliação
+ | -- | 04/06 | 2a. Avaliação (a confirmar)
 
 <br>
 
