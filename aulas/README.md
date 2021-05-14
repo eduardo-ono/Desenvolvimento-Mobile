@@ -10,11 +10,9 @@ Prof. Eduardo Ono
 <br>
 
 <details>
-  <summary>
-    <strong>Aula 01</strong>
+  <summary>Aula 01
 
   ### Introdução ao Desenvolvimento Mobile
-  ---
   </summary>
   <section markdown="1">
 
@@ -34,24 +32,24 @@ Prof. Eduardo Ono
   * Vídeos de Apoio
     * [Filipe Deschamps] [A Primeira Aula de Flutter Que Todo Mundo Deveria Ter](https://www.youtube.com/watch?v=J4BVaXkwmM8) (39:59, YouTube, Fev/2021)
 
-  ---
   </section>
 </details>
 
-<details>
-  <summary>
-    <strong>Aula 02</strong>
+---
 
-  ### ...
-  ---
+<details>
+  <summary>>Aula 02
+
+  ### Aplicativo "IMC" em Flutter
   </summary>
   <section markdown="1">
 
-  ---
   </section>
 </details>
 
-<p></p>
+---
+
+<br>
 
 ## DartPad
 

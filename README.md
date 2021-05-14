@@ -14,10 +14,10 @@ Prof. Eduardo Ono
  | :-:  | ---  | ---      |
  | 01 | 30/04 | Introdução ao Desenvolvimentoo Mobile; Flutter SDK; Configuração do Ambiente de Desenvolvimento; Aplicação "Hello World" em Dart e Flutter
  | 02 | 07/05 | Aplicação "IMC" em Flutter
- | 03 | 14/05 |
+ | 03 | 14/05 | "Jogo da Velha" em Flutter
  | 04 | 21/05 |
  | 05 | 28/05 |
- | -- | 04/06 | 2a. Avaliação (a confirmar)
+ | -- | 04/06 | 2a. Avaliação (a ser confirmado)
 
 <br>
 
@@ -31,8 +31,8 @@ Prof. Eduardo Ono
 
 | Capa | Descrição |
 | :-:  | --- |
-| <img src="./referencias/capas/zammetti_2019.jpg" width="150px"> | [ZAMMETTI_2019]<br><br>ZAMMETTI, Frank; **Practical Flutter - Improve your Mobile Development with Google's Latest Open-Source SDK**, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
-| <img src="./referencias/capas/zammetti_2020.jpg" width="150px"> | [ZAMMETTI_2020]<br><br>ZAMMETTI, Frank; **Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google**, Novatec Editora, 2020.
+| <img src="./referencias/capas/zammetti_2019.jpg" width="100px"> | [ZAMMETTI_2019] <br> ZAMMETTI, Frank; **Practical Flutter - Improve your Mobile Development with Google's Latest Open-Source SDK**, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
+| <img src="./referencias/capas/zammetti_2020.jpg" width="100px"> | [ZAMMETTI_2020] <br>ZAMMETTI, Frank; **Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google**, Novatec Editora, 2020.
 
 <br>
 
