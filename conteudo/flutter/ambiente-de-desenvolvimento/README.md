@@ -48,13 +48,21 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 
   * Adicionar o diretório `<path>\flutter\bin` na variável de ambiente `Path` do Windows.
 
-  ### Ubuntu
+  ### Linux (Ubuntu)
 
   * No Terminal, digitar o comando:
 
     ```sh
     sudo snap install flutter --classic
     ```
+
+  ### Mac
+
+  |||
+  | :-: | --- |
+  | ![img](https://img.youtube.com/vi/qt20g3zuVbA/default.jpg) | [Rodrigo Rahman] [__Curso de Flutter - Aula 1 Configurando seu ambiente de desenvolvimento para o flutter__](https://www.youtube.com/watch?v=qt20g3zuVbA) \|\| 44:01, YouTube, Ago/2020.
+
+  <br>
 
 * Para verificar se a instalação do Flutter teve sucesso, digite no Terminal o comando:
 
@@ -66,10 +74,9 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 
   ```
   flutter doctor
-
   ```
 
-* Para **atualizar** o Flutter, abra o Terminal e digite o comando:
+* Para __atualizar__ o Flutter, abra o Terminal e digite o comando:
 
   ```
   flutter upgrade

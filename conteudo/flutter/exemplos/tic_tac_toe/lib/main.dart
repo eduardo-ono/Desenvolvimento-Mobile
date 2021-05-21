@@ -1,8 +1,7 @@
-//
-// https://dartpad.dev/d0cc86ebee39474f97d3c079c7437752?
-//
-
-import 'dart:math';
+/*
+* Código do aplicativo baseado no disponibilizado em:
+* https://dartpad.dev/d0cc86ebee39474f97d3c079c7437752?
+*/
 
 import 'package:flutter/material.dart';
 
@@ -130,13 +129,13 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
                   SizedBox(
                     width: 80.0,
                     height: 80.0,
-                    child: Cross(),
+                    child: Symbol('x'),
                   ),
                 if (winner == GameState.O)
                   SizedBox(
                     width: 80.0,
                     height: 80.0,
-                    child: Circle(),
+                    child: Symbol('o'),
                   ),
                 Text(
                   (winner == GameState.Blank) ? "It's a draw!" : 'win!',
@@ -157,16 +156,7 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
           SizedBox(
             width: 80.0,
             height: 80.0,
-            child: Center(
-              child: Text(
-                'x',
-                style: TextStyle(
-                  fontSize: 70,
-                  fontWeight: FontWeight.bold,
-                  color: crossColor,
-                ),
-              ),
-            ),
+            child: Center(child: Symbol('x')),
           ),
           Text(
             '$_xWins wins',
@@ -184,16 +174,7 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
           SizedBox(
             width: 80.0,
             height: 80.0,
-            child: Center(
-              child: Text(
-                'o',
-                style: TextStyle(
-                  fontSize: 70,
-                  fontWeight: FontWeight.bold,
-                  color: circleColor,
-                ),
-              ),
-            ),
+            child: Center(child: Symbol('o')),
           ),
           Text(
             '$_oWins wins',
@@ -210,16 +191,7 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
           SizedBox(
             width: 80.0,
             height: 80.0,
-            child: Center(
-              child: Text(
-                '=',
-                style: TextStyle(
-                  fontSize: 70,
-                  fontWeight: FontWeight.bold,
-                  color: accentColor,
-                ),
-              ),
-            ),
+            child: Center(child: Symbol('=')),
           ),
           Text(
             '$_draws draws',
@@ -261,17 +233,14 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
 
   Widget get bottomBar => Padding(
         padding: const EdgeInsets.only(bottom: 16.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            FloatingActionButton(
-              heroTag: 'reset',
-              child: Icon(Icons.cached),
-              backgroundColor: accentColor,
-              mini: true,
-              onPressed: () => reset(),
-            ),
-          ],
+        child: Center(
+          child: FloatingActionButton(
+            heroTag: 'reset',
+            child: Icon(Icons.cached),
+            backgroundColor: accentColor,
+            mini: true,
+            onPressed: () => reset(),
+          ),
         ),
       );
 
@@ -305,9 +274,9 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
 
   gamePiece(int row, int col) {
     if (boardState[row][col] == GameState.X)
-      return Cross();
+      return Symbol('x');
     else if (boardState[row][col] == GameState.O)
-      return Circle();
+      return Symbol('o');
     else
       return null;
   }
@@ -414,171 +383,28 @@ class _TwoPlayerGameState extends State<TwoPlayerGame>
   }
 }
 
-class Circle extends StatefulWidget {
-  @override
-  _CircleState createState() => _CircleState();
-}
-
-class _CircleState extends State<Circle> with SingleTickerProviderStateMixin {
-  double _fraction = 0.0;
-  Animation<double> _animation;
-  AnimationController _controller;
-  @override
-  void initState() {
-    super.initState();
-
-    _controller =
-        AnimationController(duration: Duration(milliseconds: 300), vsync: this);
-
-    _animation = Tween(begin: 0.0, end: 1.0).animate(_controller)
-      ..addListener(() {
-        setState(() {
-          _fraction = _animation.value;
-        });
-      });
-
-    _controller.forward();
-  }
+class Symbol extends StatelessWidget {
+  final String symbol;
+  Symbol(this.symbol);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: AspectRatio(
-          aspectRatio: 1.0,
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: CustomPaint(
-              painter: CirclePainter(fraction: _fraction),
-            ),
-          ),
-        ),
+    Color symbolColor = accentColor;
+    switch (symbol) {
+      case 'x':
+        symbolColor = crossColor;
+        break;
+      case 'o':
+        symbolColor = circleColor;
+        break;
+    } // case
+    return Text(
+      symbol,
+      style: TextStyle(
+        fontSize: 70,
+        fontWeight: FontWeight.bold,
+        color: symbolColor,
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-}
-
-class CirclePainter extends CustomPainter {
-  final double fraction;
-  var _circlePaint;
-
-  CirclePainter({this.fraction}) {
-    _circlePaint = Paint()
-      ..color = circleColor
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 12.0
-      ..strokeCap = StrokeCap.round;
-  }
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    var rect = Offset(0.0, 0.0) & size;
-
-    canvas.drawArc(rect, -pi / 2, pi * 2 * fraction, false, _circlePaint);
-  }
-
-  @override
-  bool shouldRepaint(CirclePainter oldDelegate) {
-    return oldDelegate.fraction != fraction;
-  }
-}
-
-class Cross extends StatefulWidget {
-  @override
-  _CrossState createState() => _CrossState();
-}
-
-class _CrossState extends State<Cross> with SingleTickerProviderStateMixin {
-  double _fraction = 0.0;
-  Animation<double> _animation;
-  AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller =
-        AnimationController(duration: Duration(milliseconds: 300), vsync: this);
-
-    _animation = Tween(begin: 0.0, end: 1.0).animate(_controller)
-      ..addListener(() {
-        setState(() {
-          _fraction = _animation.value;
-        });
-      });
-
-    _controller.forward();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: AspectRatio(
-          aspectRatio: 1.0,
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: CustomPaint(
-              painter: CrossPainter(fraction: _fraction),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-}
-
-class CrossPainter extends CustomPainter {
-  final double fraction;
-  var _crossPaint;
-
-  CrossPainter({this.fraction}) {
-    _crossPaint = Paint()
-      ..color = crossColor
-      ..strokeWidth = 12.0
-      ..style = PaintingStyle.stroke
-      ..strokeCap = StrokeCap.round;
-  }
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    double leftLineFraction, rightLineFraction;
-
-    if (fraction < .5) {
-      leftLineFraction = fraction / .5;
-      rightLineFraction = 0.0;
-    } else {
-      leftLineFraction = 1.0;
-      rightLineFraction = (fraction - .5) / .5;
-    }
-
-    canvas.drawLine(
-        Offset(0.0, 0.0),
-        Offset(size.width * leftLineFraction, size.height * leftLineFraction),
-        _crossPaint);
-
-    if (fraction >= .5) {
-      canvas.drawLine(
-          Offset(size.width, 0.0),
-          Offset(size.width - size.width * rightLineFraction,
-              size.height * rightLineFraction),
-          _crossPaint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(CrossPainter oldDelegate) {
-    return oldDelegate.fraction != fraction;
   }
 }
