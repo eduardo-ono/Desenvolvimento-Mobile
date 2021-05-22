@@ -2,7 +2,7 @@ import 'package:tic_tac_toe_mvc/models/model.dart';
 
 class Controller {
   // Atributos
-  Model game = Model();
+  var game = Model();
 
   // Métodos
   String get currentPlayer => game.currentPlayer;

@@ -23,22 +23,20 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        // centerTitle: true,
+        centerTitle: true,
       ),
       body: _buildBody(),
     );
   }
 
   _buildBody() {
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          _buildBoard(),
-          _buildResetButton(),
-        ],
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        _buildBoard(),
+        _buildResetButton(),
+      ],
     );
   }
 
@@ -76,6 +74,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class Button extends StatefulWidget {
+  // Atributos
   final int index;
   final Controller controller;
 
@@ -109,7 +108,7 @@ class _ButtonState extends State<Button> {
       onPressed: _buttonPressed,
       style: TextButton.styleFrom(
         primary: Colors.white,
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal[600],
         onSurface: Colors.grey,
       ),
       child: Text(

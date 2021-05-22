@@ -16,7 +16,7 @@ class Model {
 
   void update(int index) {
     game[index] = game[0];
-    game[0] = game[0] == 'x' ? 'o' : 'x';
+    game[0] = (game[0] == 'x') ? 'o' : 'x';
   }
 
   bool checkWinner() {
