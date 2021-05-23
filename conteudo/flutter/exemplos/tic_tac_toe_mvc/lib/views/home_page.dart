@@ -41,17 +41,16 @@ class _HomePageState extends State<HomePage> {
   }
 
   _buildBoard() {
-    var buttons = [for (int i = 1; i <= 9; i++) Button(i, _controller)];
     return Expanded(
-      child: GridView.count(
+      child: GridView.builder(
         padding: const EdgeInsets.all(10),
-        // gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        //   crossAxisCount: 3,
-        //   mainAxisSpacing: 10,
-        //   crossAxisSpacing: 10,
-        // ),
-        crossAxisCount: 3,
-        children: buttons,
+        itemCount: 9,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+        ),
+        itemBuilder: _buildButton,
       ),
     );
   }
@@ -67,57 +66,34 @@ class _HomePageState extends State<HomePage> {
   }
 
   _resetGame() {
-    setState(() {
-      _controller.reset();
-    });
-  }
-}
-
-class Button extends StatefulWidget {
-  // Atributos
-  final int index;
-  final Controller controller;
-
-  // Construtor
-  Button(this.index, this.controller);
-
-  @override
-  _ButtonState createState() => _ButtonState(index, controller);
-  // Métodos
-}
-
-class _ButtonState extends State<Button> {
-  // Atributos
-  int _index;
-  Controller _controller;
-  String _buttonText = '';
-
-  // Construtor
-  _ButtonState(this._index, this._controller);
-
-  void _buttonPressed() {
-    setState(() {
-      _buttonText = _controller.currentPlayer;
-      _controller.updateGame(_index);
-    });
+    _controller.reset();
+    setState(() {});
   }
 
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildButton(context, index) {
     return TextButton(
-      onPressed: _buttonPressed,
+      onPressed:
+          _controller.buttonEnabled(index) ? () => _buttonPressed(index) : null,
       style: TextButton.styleFrom(
         primary: Colors.white,
-        backgroundColor: Colors.teal[600],
+        backgroundColor: Colors.teal[400],
         onSurface: Colors.grey,
       ),
       child: Text(
-        _buttonText,
+        _controller.buttonSymbol(index),
         style: TextStyle(
           fontSize: 100.0,
-          color: Colors.yellow,
+          color: _controller.buttonSymbol(index) == 'x'
+              ? Colors.yellow
+              : Colors.red,
         ),
       ),
     );
+  }
+
+  _buttonPressed(index) {
+    setState(() {
+      _controller.updateGame(index);
+    });
   }
 }

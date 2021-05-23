@@ -7,11 +7,9 @@ class Model {
   String get currentPlayer => game[0];
   String get printGame => game.toString();
 
-  void init() {
-    game.forEach((element) {
-      element = '';
-    });
+  void reset() {
     game[0] = 'x'; // Jogador inicial
+    for (int i = 1; i < game.length; i++) game[i] = '';
   }
 
   void update(int index) {
