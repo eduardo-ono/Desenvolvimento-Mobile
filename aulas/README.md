@@ -38,11 +38,25 @@ Prof. Eduardo Ono
 ---
 
 <details>
-  <summary>>Aula 02
+  <summary>Aula 02
 
   ### Aplicativo "IMC" em Flutter
   </summary>
   <section markdown="1">
+
+  </section>
+</details>
+
+---
+
+<details>
+  <summary>Aula 04
+
+  ### Design Pattern: MVC - Jogo da Velha
+  </summary>
+  <section markdown="1">
+
+  * [Aplicativo Jogo da Velha "Tic Tac Toe" usando o padrão MVC](../conteudo/flutter/exemplos/tic_tac_toe_mvc)
 
   </section>
 </details>
