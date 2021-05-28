@@ -63,6 +63,21 @@ Prof. Eduardo Ono
 
 ---
 
+<details>
+  <summary>Aula 05
+
+  ### Rotas (Navigator)
+  </summary>
+  <section markdown="1">
+
+  * [Rotas nomeadas](../conteudo/flutter/fundamentos/rotas/exemplos/rotas_nomeadas/)
+  * [Rotas nomeadas com menu]('../conteudo/flutter/fundamentos/rotas/exemplos/rotas_nomeadas_menu/)
+
+  </section>
+</details>
+
+---
+
 <br>
 
 ## DartPad

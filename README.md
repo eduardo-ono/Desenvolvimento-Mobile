@@ -15,8 +15,8 @@ Prof. Eduardo Ono
  | 01 | 30/04 | Introdução ao Desenvolvimentoo Mobile; Flutter SDK; Configuração do Ambiente de Desenvolvimento; Aplicação "Hello World" em Dart e Flutter
  | 02 | 07/05 | Aplicação "IMC" em Flutter
  | 03 | 14/05 | "Jogo da Velha" em Flutter
- | 04 | 21/05 |
- | 05 | 28/05 |
+ | 04 | 21/05 | Design Pattern - MVC
+ | 05 | 28/05 | Rotas (Navigator) em Flutter
  | -- | 04/06 | 2a. Avaliação (a ser confirmado)
 
 <br>
