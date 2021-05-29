@@ -17,7 +17,8 @@ Prof. Eduardo Ono
  | 03 | 14/05 | "Jogo da Velha" em Flutter
  | 04 | 21/05 | Design Pattern - MVC
  | 05 | 28/05 | Rotas (Navigator) em Flutter
- | -- | 04/06 | 2a. Avaliação (a ser confirmado)
+ | 06 | 04/06 | Games (aula a ser confirmada)
+ | -- | 11/06 | (19:00) Aula normal / (20:55) 2a. Avaliação
 
 <br>
 

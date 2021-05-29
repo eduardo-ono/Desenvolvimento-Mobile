@@ -15,18 +15,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // Métodos
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
         title: Text(widget.title),
         actions: [
-          IconButton(
-            icon: Icon(Icons.ad_units),
-            onPressed: () {
-              Navigator.of(context).pushNamed(MyApp.TELA1);
-            },
-          ),
           IconButton(
             icon: Icon(Icons.account_circle),
             onPressed: () {

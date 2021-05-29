@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:rotas_nomeadas/main.dart';
+import '../main.dart';
 
 class HomePage extends StatelessWidget {
   // Atributos
@@ -30,7 +30,12 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text('Home Page'),
+        child: IconButton(
+          icon: Icon(Icons.ad_units),
+          onPressed: () {
+            Navigator.of(context).pushNamed(MyApp.TELA1);
+          },
+        ),
       ),
     );
   }

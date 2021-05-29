@@ -7,26 +7,20 @@ class NavDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          ListTile(
-              leading: Icon(Icons.ad_units),
-              title: Text('Tela 1'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).pushNamed(MyApp.TELA1);
-              }),
-          _aboutListTile(context),
+          _openListTile(context, Icons.ad_units, 'Tela 1', MyApp.TELA1),
+          _openListTile(context, Icons.person, 'About', MyApp.ABOUT),
         ],
       ),
     );
   }
 
-  Widget _aboutListTile(BuildContext context) {
+  Widget _openListTile(context, icon, text, route) {
     return ListTile(
-      leading: Icon(Icons.person),
-      title: Text('About'),
+      leading: Icon(icon),
+      title: Text(text),
       onTap: () {
-        Navigator.pop(context); // Fecha o Drawer
-        Navigator.of(context).pushNamed(MyApp.ABOUT);
+        Navigator.pop(context); // Fecha a view (tela), ou seja, o menu lateral.
+        Navigator.of(context).pushNamed(route);
       },
     );
   }
