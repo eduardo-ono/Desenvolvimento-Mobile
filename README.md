@@ -22,6 +22,14 @@ Prof. Eduardo Ono
 
 <br>
 
+## Recursos
+
+* Android Studio (Flutter)
+* Microsoft Visual Studio Code (Dart e Flutter)
+* [DartPad](https://dartpad.dev/?null_safety=true)
+
+<br>
+
 ## Vídeos Recomendados
 
 * [TED] [Linus Torvalds, The Mind Behind Linux](https://www.youtube.com/watch?v=o8NPllzkFhE) (YouTube, 21:30)
