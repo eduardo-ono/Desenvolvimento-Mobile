@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+  <style>
+
+    body {
+      margin: 5% 10%;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 50px 0 25px 0; /* top right bottom left */
+    }
+
+    .carousel {
+      color: #170724;
+      --carousel-button-bg: #fff;
+      --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+        0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+      --carousel-button-svg-width: 20px;
+      --carousel-button-svg-height: 20px;
+      --carousel-button-svg-stroke-width: 2.5;
+    }
+
+    .carousel .carousel__button:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px #A78BFA;
+    }
+
+    .carousel .carousel__button.is-prev {
+      left: -1.5rem;
+    }
+
+    .carousel .carousel__button.is-next {
+      right: -1.5rem;
+    }
+
+    .carousel .carousel__dots {
+      color: #7E22CE;
+    }
+
+    .carousel .carousel__slide {
+      width: 100%;
+      padding: 0;
+    }
+
+    .carousel.thumb-carousel .carousel__slide {
+      width: 100px;
+      padding: 0.85rem 0.15rem;
+      text-align: center;
+    }
+
+    .carousel.thumb-carousel .carousel__slide img {
+      border-radius: 6px;
+    }
+
+    .carousel.thumb-carousel .carousel__slide.is-nav-selected img {
+      box-shadow: 0 0 0 4px #A78BFA;
+    }
+  </style>
+
+  <script>
+    var gitText = `0
+    `;
+
+    function createCarousel(id, filebase, numImages) {
+      for (var i = 0; i < numImages; i++) {
+        // div panzoom__content
+        let panzoomContent = document.createElement('img');
+        panzoomContent.classList.add('panzoom__content');
+        let filename = `${filebase}-${i.toString().padStart(2, "0")}.png`;
+        panzoomContent.setAttribute('src', filename);
+
+        // div panzoom
+        panzoom = document.createElement('div');
+        panzoom.classList.add('panzoom');
+        panzoom.appendChild(panzoomContent);
+
+        // div carousel__slide
+        let carouselSlide = document.createElement('div');
+        carouselSlide.classList.add('carousel__slide');
+        carouselSlide.appendChild(panzoom);
+
+        document.getElementById(id).appendChild(carouselSlide);
+
+        // div panzoom__content (thumb)
+        panzoomContent = document.createElement('img');
+        panzoomContent.classList.add('panzoom__content');
+        filename = `${filebase}-${i.toString().padStart(2, '0')}.png`;
+        panzoomContent.setAttribute('src', filename);
+
+        // p
+        let figCaption = document.createElement('p');
+        figCaption.innerHTML = (i + 1).toString().padStart(2, '0');
+
+        // div carousel__slide (thumb)
+        carouselSlide = document.createElement('div');
+        carouselSlide.classList.add('carousel__slide');
+        carouselSlide.appendChild(panzoomContent);
+        carouselSlide.appendChild(figCaption);
+
+        document.getElementById(id + '-thumb').appendChild(carouselSlide);
+      } // for
+      console.log(document.body.innerHTML);
+
+      const mainCarousel = new Carousel(document.getElementById(id), {
+        Dots: false,
+        on: {
+          createSlide: (carousel, slide) => {
+            slide.Panzoom = new Panzoom(slide.$el.querySelector('.panzoom'), {
+              panOnlyZoomed: true,
+              resizeParent: true,
+            });
+          },
+          deleteSlide: (carousel, slide) => {
+            if (slide.Panzoom) {
+              slide.Panzoom.destroy();
+              slide.Panzoom = null;
+            }
+          },
+        },
+      });
+
+      const thumbCarousel = new Carousel(document.getElementById(id + '-thumb'), {
+        Sync: {
+          target: mainCarousel,
+          friction: 0,
+        },
+        Dots: false,
+        Navigation: false,
+        center: true,
+        infinite: false,
+        slidePerPage: 1,
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <h1>
+    Tutorial para Instalação de Softwares (máquinas do Unisal)
+  </h1>
+  <!-- <p>Atualização do Android Studio</p> -->
+  <!-- <div id="android-studio-install" class="carousel"></div>
+  <div id="android-studio-install-thumb" class="carousel"></div>
+  <script>
+    createCarousel('android-studio-install', 'imagens/android-studio/android-studio-install', 0);
+  </script> -->
+
+  <h2>
+    Configuração do Android Studio (<strong>no perfil do aluno</strong>)
+  </h2>
+  <div id="android-studio-config" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="android-studio-config-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    createCarousel('android-studio-config', 'imagens/android-studio/android-studio-config', 22);
+  </script>
+
+  <h2>
+    Instalação do Git (requer privilégios administrativos)
+  </h2>
+  <div id="git-install" class="carousel"></div>
+  <div id="git-install-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    createCarousel('git-install', 'imagens/git/git-install', 17);
+  </script>
+
+  <h2>
+    Atualização do Flutter (requer privilégios administrativos)
+  </h2>
+  <div id="flutter-update" class="carousel"></div>
+  <div id="git-install-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    // createCarousel('git-install', 'imagens/git/git-install', 17);
+  </script>
+
+  <h2>
+    Instalação e Configuração do Visual Studio Code (perfil do aluno)
+  </h2>
+  <div id="vscode-install" class="carousel"></div>
+  <div id="vscode-install-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    createCarousel('vscode-install', 'imagens/vscode/vscode-install', 12);
+  </script>
+
+</body>
+</html>

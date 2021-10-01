@@ -26,10 +26,13 @@ Prof. Eduardo Ono
 
 ## Fundamentos
 
-> ### Introdução
-> * [Rocketseat] [Iniciando com React Native em 2019](https://www.youtube.com/watch?v=XcU9GEUZTQA) (YouTube, 17:40, Mai/2018)
-> * [Traversy Media] [React Native Crash Course 2020](https://www.youtube.com/watch?v=Hf4MJH0jDb4) (YouTube, 51:27, Fev/2020)
-> * [Programming with Mosh] <a src="https://www.youtube.com/watch?v=0-S5a0eXPoc" title=
+### Introdução
+
+* [Rocketseat] [Iniciando com React Native em 2019](https://www.youtube.com/watch?v=XcU9GEUZTQA) (YouTube, 17:40, Mai/2018)
+
+* [Traversy Media] [React Native Crash Course 2020](https://www.youtube.com/watch?v=Hf4MJH0jDb4) (YouTube, 51:27, Fev/2020)
+
+* [Programming with Mosh] <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc" title=
     "0:00:00 Introduction
     0:02:20 Prerequisites
     0:02:58 What is React Native?
@@ -64,8 +67,8 @@ Prof. Eduardo Ono
     1:45:59 Exercises
     1:46:58 Welcome Screen
     1:57:55 View Image Screen
-    2:02:51 Refactoring"
-    target="_blank">React Native Tutorial for Beginners - Build a React Native App [2020]</a> (YouTube, 2:06:29, Mai/2020)
+    2:02:51 Refactoring">
+    React Native Tutorial for Beginners - Build a React Native App [2020]</a> <br> (2:06:29, YouTube, Mai/2020)
 
 <br>
 
