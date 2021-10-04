@@ -18,11 +18,14 @@
 
     h1 {
       font-size: 2rem;
+      padding: 20px 0px;
     }
 
     h2 {
       font-size: 1.5rem;
+      font-weight: bold;
       margin: 50px 0 25px 0; /* top right bottom left */
+      padding: 20px 0px;
     }
 
     .carousel {
@@ -114,7 +117,7 @@
 
         document.getElementById(id + '-thumb').appendChild(carouselSlide);
       } // for
-      console.log(document.body.innerHTML);
+      // console.log(document.body.innerHTML);
 
       const mainCarousel = new Carousel(document.getElementById(id), {
         Dots: false,
@@ -151,18 +154,44 @@
 
 <body>
   <h1>
-    Tutorial para Instalação de Softwares (máquinas do Unisal)
+    Tutorial para Instalação/Configuração de Softwares (máquinas do Unisal)
   </h1>
-  <!-- <p>Atualização do Android Studio</p> -->
-  <!-- <div id="android-studio-install" class="carousel"></div>
-  <div id="android-studio-install-thumb" class="carousel"></div>
-  <script>
-    createCarousel('android-studio-install', 'imagens/android-studio/android-studio-install', 0);
-  </script> -->
+  <hr>
+  <p><br>
+    Elaborado por: Eduardo Ono <br>
+    Data: 04/10/2021 <br>
+    Turmas: <br>
+    &emsp;GTADS2AN - Sistemas Operacionais Embarcados e IoT <br>
+    &emsp;GTADS4AN - Desenvolvimento para Dispositivo Móvel, Web e Game
+  </p>
+  <p><br></p>
+  <p>OBS.: Favor instalar/configurar na sequência apresentada.</p>
 
   <h2>
-    Configuração do Android Studio (<strong>no perfil do aluno</strong>)
+    > Atualização do Oracle VirtualBox (requer privilégios do Administrador)
   </h2>
+  <p>- Atualizar o VirtualBox para a versão mais recente (v6.1.26).</p>
+  <p>- Incluir (botão 'Acrescentar') a imagem do Ubuntu 20.04 LTS (perfil do aluno). O arquivo encontra-se disponível no diretório 'C:\Ono'.</p>
+  <p><br></p>
+  <img src="./imagens/virtualbox/virtualbox-ubuntu.png" alt="img" style="width: 75%; margin: auto; display: block">
+  <p><br></p>
+
+  <h2>
+    > Atualização do Android Studio (requer privilégios do Administrador)
+  </h2>
+  <p>OBS.: A atualização desinstala a versão antiga e instala a versão nova.</p>
+  <p><br></p>
+  <div id="android-studio-update" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="android-studio-update-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    createCarousel('android-studio-update', 'imagens/android-studio/android-studio-update', 31);
+  </script>
+
+  <h2>
+    > Configuração do Android Studio (<span style="color: darkred"><strong>no perfil do aluno</strong></span>)
+  </h2>
+  <p style="color: darkred"><strong>OBS.: Executar o Android Studio no perfil do aluno:</strong></p>
+  <p><br></p>
   <div id="android-studio-config" class="carousel mb-4 w-10/12 mx-auto"></div>
   <div id="android-studio-config-thumb" class="carousel thumb-carousel"></div>
   <script>
@@ -170,31 +199,42 @@
   </script>
 
   <h2>
-    Instalação do Git (requer privilégios administrativos)
+    > Instalação do Git (requer privilégios do Administrador)
   </h2>
-  <div id="git-install" class="carousel"></div>
+  <p><br></p>
+  <div id="git-install" class="carousel mb-4 w-10/12 mx-auto"></div>
   <div id="git-install-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('git-install', 'imagens/git/git-install', 17);
   </script>
 
   <h2>
-    Atualização do Flutter (requer privilégios administrativos)
+    > Instalação e Configuração do Visual Studio Code (<strong>no perfil do aluno</strong> )
   </h2>
-  <div id="flutter-update" class="carousel"></div>
-  <div id="git-install-thumb" class="carousel thumb-carousel"></div>
-  <script>
-    // createCarousel('git-install', 'imagens/git/git-install', 17);
-  </script>
-
-  <h2>
-    Instalação e Configuração do Visual Studio Code (perfil do aluno)
-  </h2>
-  <div id="vscode-install" class="carousel"></div>
+  <p style="color: darkred;"><strong>OBS.: Deve ser instalado no perfil do aluno.</strong></p>
+  <p><br></p>
+  <div id="vscode-install" class="carousel mb-4 w-10/12 mx-auto"></div>
   <div id="vscode-install-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('vscode-install', 'imagens/vscode/vscode-install', 12);
   </script>
+
+  <h2>
+    > Atualização do Flutter
+  </h2>
+  <p><strong>OBS.:</strong></p>
+  <p><strong>- Executar o comando 'flutter upgrade' no Prompt de Comando do Adminstrador (usuário lab2a).</strong></p>
+  <p><strong>- Executar o restante dos comandos no Prompt de Comando do perfil do aluno.'</strong></p>
+  <p><br></p>
+  <div id="flutter-update" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="flutter-update-thumb" class="carousel thumb-carousel"></div>
+  <script>
+    createCarousel('flutter-update', 'imagens/flutter/flutter-update', 8);
+  </script>
+
+  <p><br></p>
+  <hr>
+  <p style="text-align: center;">Eduardo Ono</p>
 
 </body>
 </html>

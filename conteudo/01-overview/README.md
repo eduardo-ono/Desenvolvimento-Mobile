@@ -20,6 +20,7 @@ Prof. Eduardo Ono
 
 | Thumb | Descrição |
 | :-: | --- |
+| [![Thumb](https://img.youtube.com/vi/PKRXbLnfXXk/default.jpg)](https://www.youtube.com/watch?v=PKRXbLnfXXk "Which one is best for you? Flutter, React Native, Ionic or NativeScript?") | <sup>[Academind]</sup> [__Which one is best for you? Flutter, React Native, Ionic or NativeScript?__](https://www.youtube.com/watch?v=PKRXbLnfXXk) <br> (38:17, YouTube, Ago/2019)
 | [![Thumb](https://img.youtube.com/vi/kjvfqfNadcM/default.jpg)](https://www.youtube.com/watch?v=kjvfqfNadcM "Built a TodoApp on React Native, Flutter and Native. Which one is better?") | <sup>[PeterCodes]</sup> [__Built a TodoApp on React Native, Flutter and Native. Which one is better?__](https://www.youtube.com/watch?v=kjvfqfNadcM) <br> (6:08, YouTube, Ago/2021)
 
 <br>
