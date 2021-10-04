@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
@@ -55,47 +55,62 @@
       color: #7E22CE;
     }
 
+    .carousel {
+      width: 83%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+
     .carousel .carousel__slide {
       width: 100%;
       padding: 0;
+    }
+
+    .carousel.thumb-carousel {
+      width: 83%;
+      margin: auto;
     }
 
     .carousel.thumb-carousel .carousel__slide {
       width: 100px;
       padding: 0.85rem 0.15rem;
       text-align: center;
+      opacity: 0.8;
     }
 
     .carousel.thumb-carousel .carousel__slide img {
       border-radius: 6px;
+      width: 100%;
     }
 
     .carousel.thumb-carousel .carousel__slide.is-nav-selected img {
       box-shadow: 0 0 0 4px #A78BFA;
+      opacity: 1;
     }
+
   </style>
 
   <script>
-    var gitText = `0
-    `;
-
     function createCarousel(id, filebase, numImages) {
       for (var i = 0; i < numImages; i++) {
         // div panzoom__content
         let panzoomContent = document.createElement('img');
-        panzoomContent.classList.add('panzoom__content');
+        // panzoomContent.classList.add('panzoom__content');
         let filename = `${filebase}-${i.toString().padStart(2, "0")}.png`;
         panzoomContent.setAttribute('src', filename);
 
         // div panzoom
-        panzoom = document.createElement('div');
-        panzoom.classList.add('panzoom');
-        panzoom.appendChild(panzoomContent);
+        // panzoom = document.createElement('div');
+        // panzoom.classList.add('panzoom');
+        // panzoom.appendChild(panzoomContent);
 
         // div carousel__slide
         let carouselSlide = document.createElement('div');
         carouselSlide.classList.add('carousel__slide');
-        carouselSlide.appendChild(panzoom);
+        carouselSlide.setAttribute('data-src', filename);
+        carouselSlide.setAttribute('data-fancybox', '');
+        carouselSlide.appendChild(panzoomContent);
 
         document.getElementById(id).appendChild(carouselSlide);
 
@@ -117,24 +132,9 @@
 
         document.getElementById(id + '-thumb').appendChild(carouselSlide);
       } // for
-      // console.log(document.body.innerHTML);
 
       const mainCarousel = new Carousel(document.getElementById(id), {
         Dots: false,
-        on: {
-          createSlide: (carousel, slide) => {
-            slide.Panzoom = new Panzoom(slide.$el.querySelector('.panzoom'), {
-              panOnlyZoomed: true,
-              resizeParent: true,
-            });
-          },
-          deleteSlide: (carousel, slide) => {
-            if (slide.Panzoom) {
-              slide.Panzoom.destroy();
-              slide.Panzoom = null;
-            }
-          },
-        },
       });
 
       const thumbCarousel = new Carousel(document.getElementById(id + '-thumb'), {
@@ -145,8 +145,8 @@
         Dots: false,
         Navigation: false,
         center: true,
+        slidesPerPage: 1,
         infinite: false,
-        slidePerPage: 1,
       });
     }
   </script>
@@ -181,7 +181,7 @@
   </h2>
   <p>OBS.: A atualização desinstala a versão antiga e instala a versão nova.</p>
   <p><br></p>
-  <div id="android-studio-update" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="android-studio-update" class="carousel"></div>
   <div id="android-studio-update-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('android-studio-update', 'imagens/android-studio/android-studio-update', 31);
@@ -192,7 +192,7 @@
   </h2>
   <p style="color: darkred"><strong>OBS.: Executar o Android Studio no perfil do aluno:</strong></p>
   <p><br></p>
-  <div id="android-studio-config" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="android-studio-config" class="carousel"></div>
   <div id="android-studio-config-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('android-studio-config', 'imagens/android-studio/android-studio-config', 22);
@@ -203,7 +203,7 @@
   </h2>
   <p>OBS.: Opções <strong>não</strong> destacadas em vermelho são opções padrão ("default") na instalação.</p>
   <p><br></p>
-  <div id="git-install" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="git-install" class="carousel"></div>
   <div id="git-install-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('git-install', 'imagens/git/git-install', 17);
@@ -214,7 +214,7 @@
   </h2>
   <p style="color: darkred;"><strong>OBS.: Deve ser instalado no perfil do aluno.</strong></p>
   <p><br></p>
-  <div id="vscode-install" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="vscode-install" class="carousel"></div>
   <div id="vscode-install-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('vscode-install', 'imagens/vscode/vscode-install', 12);
@@ -227,7 +227,7 @@
   <p><strong>- Executar o comando inicial 'flutter upgrade' no Prompt de Comando do Adminstrador (usuário lab2a).</strong></p>
   <p><strong>- Executar o restante dos comandos no Prompt de Comando do perfil do aluno.'</strong></p>
   <p><br></p>
-  <div id="flutter-update" class="carousel mb-4 w-10/12 mx-auto"></div>
+  <div id="flutter-update" class="carousel"></div>
   <div id="flutter-update-thumb" class="carousel thumb-carousel"></div>
   <script>
     createCarousel('flutter-update', 'imagens/flutter/flutter-update', 8);
