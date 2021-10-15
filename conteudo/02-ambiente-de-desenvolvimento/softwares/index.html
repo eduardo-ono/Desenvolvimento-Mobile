@@ -95,40 +95,34 @@
     function createCarousel(id, filebase, numImages) {
       for (var i = 0; i < numImages; i++) {
         // div panzoom__content
-        let panzoomContent = document.createElement('img');
-        // panzoomContent.classList.add('panzoom__content');
+        let img = document.createElement('img');
         let filename = `${filebase}-${i.toString().padStart(2, "0")}.png`;
-        panzoomContent.setAttribute('src', filename);
-
-        // div panzoom
-        // panzoom = document.createElement('div');
-        // panzoom.classList.add('panzoom');
-        // panzoom.appendChild(panzoomContent);
+        img.setAttribute('src', filename);
 
         // div carousel__slide
         let carouselSlide = document.createElement('div');
         carouselSlide.classList.add('carousel__slide');
         carouselSlide.setAttribute('data-src', filename);
         carouselSlide.setAttribute('data-fancybox', '');
-        carouselSlide.appendChild(panzoomContent);
+        carouselSlide.appendChild(img);
 
         document.getElementById(id).appendChild(carouselSlide);
 
         // div panzoom__content (thumb)
-        panzoomContent = document.createElement('img');
-        panzoomContent.classList.add('panzoom__content');
+        let div = document.createElement('img');
+        div.classList.add('panzoom__content');
         filename = `${filebase}-${i.toString().padStart(2, '0')}.png`;
-        panzoomContent.setAttribute('src', filename);
+        div.setAttribute('src', filename);
 
         // p
-        let figCaption = document.createElement('p');
-        figCaption.innerHTML = (i + 1).toString().padStart(2, '0');
+        let p = document.createElement('p');
+        p.innerHTML = (i + 1).toString().padStart(2, '0');
 
         // div carousel__slide (thumb)
         carouselSlide = document.createElement('div');
         carouselSlide.classList.add('carousel__slide');
-        carouselSlide.appendChild(panzoomContent);
-        carouselSlide.appendChild(figCaption);
+        carouselSlide.appendChild(div);
+        carouselSlide.appendChild(p);
 
         document.getElementById(id + '-thumb').appendChild(carouselSlide);
       } // for
