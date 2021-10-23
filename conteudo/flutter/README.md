@@ -24,6 +24,13 @@ Prof. Eduardo Ono
 
 <br>
 
+## Recursos
+
+* https://github.com/Solido/awesome-flutter
+* https://github.com/nisrulz/flutter-examples
+
+<br>
+
 ### Ambiente Online
 
 * [https://dartpad.dev/flutter](https://dartpad.dev/flutter)
