@@ -1,30 +1,36 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  final mensagem = 'Olá mundo!';
+
   @override
   Widget build(BuildContext context) {
-    var materialApp = new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: new Scaffold(
-        body: new Center(
-          child: MyWidget(),
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              Text(
+                mensagem,
+                style: TextStyle(
+                  fontFamily: 'Times',
+                  fontSize: 30,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF0000FF),
+                  backgroundColor: Color(0x20FF0000),
+                ),
+              ),
+              Text('Boa noite!'),
+            ],
+          ),
         ),
       ),
     );
-    return materialApp;
   }
 }
 
-class MyWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      'Olá mundo!',
-      style: Theme.of(context).textTheme.headline4,
-    );
-  } // build
-}
+class EstiloText extends TextStyle {}

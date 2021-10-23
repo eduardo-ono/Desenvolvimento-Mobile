@@ -13,6 +13,14 @@ Prof. Eduardo Ono
 
 <br>
 
+## Crash Courses
+
+| Thumb | Descrição |
+| :-: | --- |
+| [![img](https://img.youtube.com/vi/veMhOYRib9o/default.jpg)](https://www.youtube.com/watch?v=veMhOYRib9o) | <sup>[Derek Banas]</sup> [__Dart Tutorial 2021__](https://www.youtube.com/watch?v=veMhOYRib9o) <br> <sub>(1:37:57, YouTube, Jul/2021)</sub>
+
+<br>
+
 ## Cursos "Completos"
 
 | Thumb | Descrição |

@@ -29,8 +29,16 @@ Prof. Eduardo Ono
 
 <br>
 
-## Bibliografia
+## Bibliografia Básica
 
 * [WALRATH_2012] WALRATH, Kathy; LADD Seth. Dart - Up and Running, 2012.
+
+<br>
+
+## Bibliografia Complementar
+
+| Capa | Descrição |
+| :-: | --- |
+| <img src="../../referencias/capas/BIESSEK_2019.jpg" alt="img" width="100px"> | <sup>[BIESSEK_2019]</sup> <br>BIESSEK, Alessandro; __Flutter for Beginners: An introductory guide to building cross-platform mobile applications with Flutter and Dart 2__, Birmingham: Packt Publishing, 2020.
 
 <br>

@@ -1,4 +1,5 @@
-### Desenvolvimento Mobile
+| <sup>[Desenvolvimento Mobile](../../) > [Conteúdo](../)</sup> |
+| --- |
 
 # Overview
 
@@ -20,8 +21,9 @@ Prof. Eduardo Ono
 
 | Thumb | Descrição |
 | :-: | --- |
-| [![Thumb](https://img.youtube.com/vi/PKRXbLnfXXk/default.jpg)](https://www.youtube.com/watch?v=PKRXbLnfXXk "Which one is best for you? Flutter, React Native, Ionic or NativeScript?") | <sup>[Academind]</sup> [__Which one is best for you? Flutter, React Native, Ionic or NativeScript?__](https://www.youtube.com/watch?v=PKRXbLnfXXk) <br> (38:17, YouTube, Ago/2019)
-| [![Thumb](https://img.youtube.com/vi/kjvfqfNadcM/default.jpg)](https://www.youtube.com/watch?v=kjvfqfNadcM "Built a TodoApp on React Native, Flutter and Native. Which one is better?") | <sup>[PeterCodes]</sup> [__Built a TodoApp on React Native, Flutter and Native. Which one is better?__](https://www.youtube.com/watch?v=kjvfqfNadcM) <br> (6:08, YouTube, Ago/2021)
+| [![img](https://img.youtube.com/vi/2nZOTCTw4CM/default.jpg)](https://www.youtube.com/watch?v=2nZOTCTw4CM) | <sup>[Programador BR]</sup> [__React Native, Flutter, Kotlin ou Swift? O que vale mais a pena? [Perguntas e respostas]__](https://www.youtube.com/watch?v=2nZOTCTw4CM) <br> <sub>(8:01, YouTube, Out/2020)</sub>
+| [![Thumb](https://img.youtube.com/vi/PKRXbLnfXXk/default.jpg)](https://www.youtube.com/watch?v=PKRXbLnfXXk) | <sup>[Academind]</sup> [__Which one is best for you? Flutter, React Native, Ionic or NativeScript?__](https://www.youtube.com/watch?v=PKRXbLnfXXk) <br> <sub>(38:17, YouTube, Ago/2019)</sub>
+| [![Thumb](https://img.youtube.com/vi/kjvfqfNadcM/default.jpg)](https://www.youtube.com/watch?v=kjvfqfNadcM) | <sup>[PeterCodes]</sup> [__Built a TodoApp on React Native, Flutter and Native. Which one is better?__](https://www.youtube.com/watch?v=kjvfqfNadcM) <br> <sub>(6:08, YouTube, Ago/2021)</sub>
 
 <br>
 
@@ -36,5 +38,14 @@ Prof. Eduardo Ono
 * [Programador BR] [Eh por isso que seu APP não dá dinheiro](https://www.youtube.com/watch?v=q8jXr0R_2UA) (YouTube, 8:53, Fev/2020)
 * [Programador BR] [React Native, Flutter, Kotlin ou Swift? O que vale mais a pena? (Perguntas e respostas)](https://www.youtube.com/watch?v=2nZOTCTw4CM)
 * [Programador BR] [Esses 3 jogos faturam mais de R$ 10.000](https://www.youtube.com/watch?v=LYNmZMBe4xA) (YouTube, 7:50, Jun/2020)
+
+<br>
+
+## Curiosidades
+
+| Thumb | Descrição |
+| :-: | --- |
+| [![img](https://img.youtube.com/vi/BbSPSaftqN0/default.jpg)](https://www.youtube.com/watch?v=BbSPSaftqN0) | <sup>[Portal do Desconhecido]</sup> [__Celulares e Smartphones mais vendidos no mundo entre 1992-2020__](https://www.youtube.com/watch?v=BbSPSaftqN0) <br> <sub>(3:34, YouTube, Ago/2020)</sub>
+| [![img](https://img.youtube.com/vi/FgFV2DP5tZ4/default.jpg)](https://www.youtube.com/watch?v=FgFV2DP5tZ4) | <sup>[TecMundo]</sup> [__A história da Qualcomm - TecMundo__](https://www.youtube.com/watch?v=FgFV2DP5tZ4) <br> <sub>(13:31, YouTube, Abr/2019)</sub>
 
 <br>

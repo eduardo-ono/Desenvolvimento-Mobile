@@ -12,8 +12,8 @@ Prof. Eduardo Ono
 
 | Aula | Data | Conteúdo |
 | :-:  | ---  | ---      |
-| 01 | 15/10 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento; Aplicação "Hello World" em Dart e Flutter
-| 02 | 22/10 | Aplicação "IMC" em Flutter
+| 01 | 15/10 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento; Fundamentos da linguagem de programação Dart
+| 02 | 22/10 | "Hello World!" em Flutter; Aplicação "IMC"
 | 03 | 29/10 | "Jogo da Velha" em Flutter
 | 04 | 05/11 | Design Pattern - MVC
 | 05 | 12/11 | Rotas (Navigator) em Flutter
@@ -22,6 +22,13 @@ Prof. Eduardo Ono
 | -- |  | __Avaliação de 2a. Chamada¹__
 
 ¹Apenas para quem perdeu uma das Avaliações. É necessária solicitação junto à Secretaria.
+
+<br>
+
+## Pré-Requisitos
+
+* [Introdução à Programação](https://github.com/eduardo-ono/Introducao-a-Programacao/)
+* [Programação Orientada a Objetos](https://github.com/eduardo-ono/Programacao-Orientada-a-Objetos/)
 
 <br>
 
@@ -34,23 +41,21 @@ Prof. Eduardo Ono
 
 <br>
 
-## Vídeos Recomendados
-
-* [TED] [Linus Torvalds, The Mind Behind Linux](https://www.youtube.com/watch?v=o8NPllzkFhE) (YouTube, 21:30)
-
-<br>
-
 ## Bibliografia
 
 | Capa | Descrição |
 | :-:  | --- |
-| <img src="./referencias/capas/ZAMMETTI_2019.jpg" width="100px"> | <sup>[ZAMMETTI_2019]</sup> <br> ZAMMETTI, Frank; __Practical Flutter - Improve your Mobile Development with Google's Latest Open-Source SDK__, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
 | <img src="./referencias/capas/ZAMMETTI_2020.jpg" width="100px"> | <sup>[ZAMMETTI_2020]</sup> <br>ZAMMETTI, Frank; __Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google__, Novatec Editora, 2020.
-| <img src="./referencias/capas/WINDMILL_2020.jpg" width="100px"> | [WINDMILL_2020] <br>WINDMILL, Eric; __Flutter in Action__, Manning Publications, 2020.
+| <img src="./referencias/capas/ZAMMETTI_2019.jpg" width="100px"> | <sup>[ZAMMETTI_2019]</sup> <br> ZAMMETTI, Frank; __Practical Flutter - Improve your Mobile Development with Google's Latest Open-Source SDK__, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
+| <img src="./referencias/capas/BIESSEK_2019.jpg" width="100px"> | <sup>[BIESSEK_2019]</sup> <br>BIESSEK, Alessandro; __Flutter for Beginners: An introductory guide to building cross-platform mobile applications with Flutter and Dart 2__, Birmingham: Packt Publishing, 2020[.](https://app.box.com/s/45ycchcwhei006mplhu924o5jwx1kq6o)
 
 <br>
 
 ## Bibliografia Complementar
+
+| Capa | Descrição |
+| :-:  | --- |
+| <img src="./referencias/capas/WINDMILL_2020.jpg" width="100px"> | <sup>[WINDMILL_2020]</sup> <br>WINDMILL, Eric; __Flutter in Action__, Manning Publications, 2020.
 
 <br>
 
