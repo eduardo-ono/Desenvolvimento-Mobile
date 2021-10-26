@@ -104,4 +104,6 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
   | [![img](https://img.youtube.com/vi/gErGLc4LDFQ/default.jpg)](https://www.youtube.com/watch?v=gErGLc4LDFQ "[Área Tech Brasil] Como Executar seus Aplicativos no Celular Android (O Guia definitivo) \|\| 5:08, YouTube, Mar/2021")
   | --- |
 
+* https://www.youtube.com/watch?v=uF5rP2USP7A
+
 <br>

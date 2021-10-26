@@ -21,3 +21,9 @@ Prof. Eduardo Ono
 | [![Thumb](https://img.youtube.com/vi/aS40mahVEKg/default.jpg)](https://www.youtube.com/watch?v=aS40mahVEKg "Kotlin-based Android Apps \| Build Your First Mobile Application") | <sup>[LOGANFORD Academy]</sup> [__Kotlin-based Android Apps \| Build Your First Mobile Application__](https://www.youtube.com/watch?v=aS40mahVEKg) <br> (4:15:20, YouTube, Set/2021)
 
 <br>
+
+## Canais Recomendados
+
+* https://www.youtube.com/c/CubosTecnologia/videos
+
+<br>
