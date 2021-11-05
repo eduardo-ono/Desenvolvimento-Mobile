@@ -1,5 +1,4 @@
-| Desenvolvimento Mobile > Conteúdo |
-| --- |
+> <h5>Desenvolvimento Mobile > Conteúdo</h5>
 
 # Flutter
 
@@ -26,8 +25,16 @@ Prof. Eduardo Ono
 
 ## Recursos
 
+* https://api.flutter.dev/flutter/material/Icons-class.html
+* https://github.com/iampawan/FlutterExampleApps
 * https://github.com/Solido/awesome-flutter
 * https://github.com/nisrulz/flutter-examples
+* https://github.com/Solido/awesome-flutter
+* https://github.com/londonappbrewery/Flutter-Course-Resources
+* https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+* https://www.codetime.dev.br/flutter-layout-cheat-sheet-0001/
+* https://medium.com/flutter-community/flutter-animations-cheat-sheet-7f8cebfb850c
+* https://github.com/PoojaB26/FlutterBasicWidgets
 
 <br>
 
@@ -73,7 +80,7 @@ Prof. Eduardo Ono
 
 * Instalar a extensão `Flutter` (Dark Code) no VS Code.
 
-* Para executar um projeto, teclar `Ctrl+F5` (Run Without Debugging)
+* Para executar um projeto, teclar <kbd>Ctrl</kbd> + <kbd>F5</kbd> (Run Without Debugging)
 
 * Para "resetar" um projeto, executar os comandos:
 

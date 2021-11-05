@@ -10,9 +10,10 @@ Prof. Eduardo Ono
 
 | Thumb | Descrição |
 | :-: | --- |
-| [![Thumb](https://img.youtube.com/vi/mqltv3kFdgE/default.jpg)](https://www.youtube.com/watch?v=mqltv3kFdgE "React Native // Dicionário do Programador") | <sup>[Código Fonte TV]</sup> [__React Native // Dicionário do Programador__](https://www.youtube.com/watch?v=mqltv3kFdgE) <br> (8:28, YouTube, Set/2019)
-| [![Thumb](https://img.youtube.com/vi/6oFuwhIibo4/default.jpg)](https://www.youtube.com/watch?v=6oFuwhIibo4 "What Is React Native & Why Is It So Popular?") | <sup>[Programming with Mosh]</sup> [__What Is React Native & Why Is It So Popular?__](https://www.youtube.com/watch?v=6oFuwhIibo4) <br> (4:50, YouTube, Jul/2020)
-| [![img](https://img.youtube.com/vi/bnYJRYFsrSw/default.jpg)](https://www.youtube.com/watch?v=bnYJRYFsrSw "React Native vs Flutter") | <sup>[Academind]</sup> [__React Native vs Flutter__](https://www.youtube.com/watch?v=bnYJRYFsrSw) <br> (33:40, YouTube, Jul/2018)
+| [![Thumb](https://img.youtube.com/vi/mqltv3kFdgE/default.jpg)](https://www.youtube.com/watch?v=mqltv3kFdgE "React Native // Dicionário do Programador") | <sup>[Código Fonte TV]</sup> [__React Native // Dicionário do Programador__](https://www.youtube.com/watch?v=mqltv3kFdgE)<br><sub>(8:28, YouTube, Set/2019)</sub>
+| [![Thumb](https://img.youtube.com/vi/9F6KARtsH_E/default.jpg)](https://www.youtube.com/watch?v=9F6KARtsH_E "React Native // Dicionário do Programador") | <sup>[Programador BR]</sup> [__React vs React Native - Qual a diferença? - Programador Br - ep. 106__](https://www.youtube.com/watch?v=9F6KARtsH_E)<br><sub>(12:00, YouTube, Ago/2018)</sub>
+| [![Thumb](https://img.youtube.com/vi/6oFuwhIibo4/default.jpg)](https://www.youtube.com/watch?v=6oFuwhIibo4 "What Is React Native & Why Is It So Popular?") | <sup>[Programming with Mosh]</sup> [__What Is React Native & Why Is It So Popular?__](https://www.youtube.com/watch?v=6oFuwhIibo4)<br><sub>(4:50, YouTube, Jul/2020)</sub>
+| [![img](https://img.youtube.com/vi/bnYJRYFsrSw/default.jpg)](https://www.youtube.com/watch?v=bnYJRYFsrSw "React Native vs Flutter") | <sup>[Academind]</sup> [__React Native vs Flutter__](https://www.youtube.com/watch?v=bnYJRYFsrSw)<br><sub>(33:40, YouTube, Jul/2018)</sub>
 
 <br>
 

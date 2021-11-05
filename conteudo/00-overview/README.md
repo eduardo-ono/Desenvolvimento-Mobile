@@ -21,7 +21,9 @@ Prof. Eduardo Ono
 
 | Thumb | Descrição |
 | :-: | --- |
+| [![img](https://img.youtube.com/vi/YsLKjVQQh3Y/default.jpg)](https://www.youtube.com/watch?v=YsLKjVQQh3Y) | <sup>[Tiago Aguiar]</sup> [__FLUTTER VS REACT NATIVE VS ANDROID E IOS NATIVOS (SWIFT/KOTLIN) - QUAL DEVO ESCOLHER?__](https://www.youtube.com/watch?v=YsLKjVQQh3Y)<br><sub>(13:25, YouTube, Jul/2019)</sub>
 | [![img](https://img.youtube.com/vi/2nZOTCTw4CM/default.jpg)](https://www.youtube.com/watch?v=2nZOTCTw4CM) | <sup>[Programador BR]</sup> [__React Native, Flutter, Kotlin ou Swift? O que vale mais a pena? [Perguntas e respostas]__](https://www.youtube.com/watch?v=2nZOTCTw4CM) <br> <sub>(8:01, YouTube, Out/2020)</sub>
+| [![img](https://img.youtube.com/vi/-6FB7UDuQsk/default.jpg)](https://www.youtube.com/watch?v=-6FB7UDuQsk) | <sup>[Lucas Montano]</sup> [__Flutter e React Native \| Eu que sei o melhor pra ti!__](https://www.youtube.com/watch?v=-6FB7UDuQsk) <br> <sub>(11:58, YouTube, Out/2019)</sub>
 | [![Thumb](https://img.youtube.com/vi/PKRXbLnfXXk/default.jpg)](https://www.youtube.com/watch?v=PKRXbLnfXXk) | <sup>[Academind]</sup> [__Which one is best for you? Flutter, React Native, Ionic or NativeScript?__](https://www.youtube.com/watch?v=PKRXbLnfXXk) <br> <sub>(38:17, YouTube, Ago/2019)</sub>
 | [![Thumb](https://img.youtube.com/vi/kjvfqfNadcM/default.jpg)](https://www.youtube.com/watch?v=kjvfqfNadcM) | <sup>[PeterCodes]</sup> [__Built a TodoApp on React Native, Flutter and Native. Which one is better?__](https://www.youtube.com/watch?v=kjvfqfNadcM) <br> <sub>(6:08, YouTube, Ago/2021)</sub>
 

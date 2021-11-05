@@ -58,6 +58,16 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
     * Para editar uma variável de sistema , escolher 'Editar as variáveis de ambiente do sistema'. Também é possível abrir a janela 'Propriedades do Sistema' digitando-se `sysdm.cpl` na janela 'Executar'. Na aba 'Avançado', clicar em 'Variáveis de Ambiente'.
     * Na janela 'Variáveis de Ambiente', selecionar a variável `PATH` e clicar em 'Editar' para adicionar o path do Flutter.
 
+### Windows 11 WSL
+
+* https://www.youtube.com/watch?v=DnASqA7HkGc
+
+* https://www.youtube.com/watch?v=nzEtYWZPnmc
+
+* https://www.youtube.com/watch?v=h54nNuVAeWg
+
+<br>
+
 ### Linux (Ubuntu)
 
 * No Terminal, digitar o comando:

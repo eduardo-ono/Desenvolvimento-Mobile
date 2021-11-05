@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // Nome do Paciente
             TextField(
               decoration: InputDecoration(
-                // border: InputBorder.none,
+                border: InputBorder.none,
                 hintText: "Nome do paciente",
               ),
               style: TextStyle(fontSize: _fontSize),
@@ -133,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text(
                 "Calcular IMC",
                 style: TextStyle(fontSize: _fontSize),
