@@ -69,3 +69,9 @@ Prof. Eduardo Ono
 * [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg)
 
 <br>
+
+## Dicas para o Profissional
+
+* https://www.youtube.com/watch?v=YZSkVMFfTLU
+
+<br>

@@ -26,4 +26,6 @@ Prof. Eduardo Ono
 
 * https://www.youtube.com/c/CubosTecnologia/videos
 
+* https://www.youtube.com/channel/UCr1aRtno1s1G3iAwe6b1WrA
+
 <br>

@@ -1,5 +1,4 @@
-| <sup>Desenvolvimento Mobile > Conteúdo > Dart</sup> |
-| --- |
+> <h5>Desenvolvimento Mobile > Conteúdo > Dart</h5>
 
 # Orientação a Objetos em Dart
 
@@ -178,5 +177,13 @@ Paciente inserirPaciente() {
 <br>
 
 ## Encapsulamento
+
+<br>
+
+## Vídeos de Apoio
+
+| Thumb | Descrição |
+| :-: | --- |
+| [![img](https://img.youtube.com/vi/dL2NxrNewBQ/default.jpg)](https://www.youtube.com/watch?v=dL2NxrNewBQ) | <sup>[Cod3r Cursos]</sup> [__FLUTTER - Vou mudar sua VISÃO__](https://www.youtube.com/watch?v=dL2NxrNewBQ)<br><sub>(27:48, YouTube, Dez/2019)</sub>
 
 <br>
