@@ -1,5 +1,4 @@
-| <sup>Desenvolvimento Mobile > Conteúdo</sup> |
-| --- |
+> <h5>Desenvolvimento Mobile > Conteúdo</h5>
 
 # Dart
 
@@ -21,17 +20,19 @@ Prof. Eduardo Ono
 
 <br>
 
-## Vídeos Recomendados
+## Recursos
 
-* [coding right] [Dart Programming Language - Beginner to Intermediate Full Tutorial](https://www.youtube.com/watch?v=afXXvBOWq14) (YouTube, 2:04:31, 2020)
-* [Tensor Programming] [Introduction to Dart for Beginners - Types, Variables, Functions and Objects - Part One](https://www.youtube.com/watch?v=8F2uemqLwvE) (YouTube, 21:31, 2019)
-* [Derek Banas] [Dart Tutorial (2015)](https://www.youtube.com/watch?v=OLjyCy-7U2U) (YouTube, 1:18:06)
+* [https://dart.dev/guides](https://dart.dev/guides)
+
+* https://www.tutorialspoint.com/dart_programming/index.htm
 
 <br>
 
 ## Bibliografia Básica
 
-* [WALRATH_2012] WALRATH, Kathy; LADD Seth. Dart - Up and Running, 2012.
+| Capa | Descrição |
+| :-: | --- |
+| <img src="./referencias/capas/WALRATH_2012.jpg" alt="img" width="100px"> | <sup>[WALRATH_2012]</sup><br>WALRATH, Kathy; LADD Seth. __Dart - Up and Running__, Sebastopol: O'Reilly Media, 2012[.](https://app.box.com/s/kmlb0pnjjs5xh9qlt3mtzo0ffggwu5ld)
 
 <br>
 

@@ -1,5 +1,4 @@
-| <sup>Desenvolvimento Mobile > Conteúdo > Dart</sup> |
-| --- |
+> <h5>Desenvolvimento Mobile > Conteúdo > Dart</h5>
 
 # Ambiente de Desenvolvimento (Dart)
 
@@ -21,14 +20,14 @@ __OBS.: O Flutter SDK já inclui o Dart SDK. Assim, caso já tenha o Flutter ins
 
 * Versão do Dart SDK utilizado
 
-```sh
-dart --version
-```
+  ```sh
+  dart --version
+  ```
 
 * Gerar um executável
 
-```dart
-dart compile exe <nome_do_arquivo>
-```
+  ```dart
+  dart compile exe <nome_do_arquivo>
+  ```
 
 <br>

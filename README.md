@@ -46,7 +46,7 @@ Prof. Eduardo Ono
 
 | Capa | Descrição |
 | :-:  | --- |
-| <img src="./referencias/capas/ZAMMETTI_2020.jpg" width="100px"> | <sup>[ZAMMETTI_2020]</sup> <br>ZAMMETTI, Frank; __Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google__, Novatec Editora, 2020.
+| <img src="./referencias/capas/ZAMMETTI_2020.jpg" width="100px"> | <sub>[ZAMMETTI_2020]</sub> <br>ZAMMETTI, Frank; __Flutter na Prática: Melhore seu Desenvolvimento Mobile com o SDK Open Source Mais Recente do Google__, Novatec Editora, 2020.
 | <img src="./referencias/capas/ZAMMETTI_2019.jpg" width="100px"> | <sup>[ZAMMETTI_2019]</sup> <br> ZAMMETTI, Frank; __Practical Flutter: Improve your Mobile Development with Google's Latest Open-Source SDK__, Apress, 2019[.](https://app.box.com/s/12e9ajfceiv9n29ojq81bqegrac87fp9)
 | <img src="./referencias/capas/BIESSEK_2019.jpg" width="100px"> | <sup>[BIESSEK_2019]</sup> <br>BIESSEK, Alessandro; __Flutter for Beginners: An introductory guide to building cross-platform mobile applications with Flutter and Dart 2__, Birmingham: Packt Publishing, 2020[.](https://app.box.com/s/45ycchcwhei006mplhu924o5jwx1kq6o)
 
