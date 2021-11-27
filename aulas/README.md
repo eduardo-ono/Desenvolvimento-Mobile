@@ -99,7 +99,9 @@ Prof. Eduardo Ono
 ---
 
 <details>
-  <summary><strong>Aula 06 - Boas práticas de programação em Flutter</strong></summary>
+  <summary id="aula-06">
+    <strong>Aula 06 - Boas práticas de programação em Flutter</strong>
+  </summary>
   <section markdown="1">
 
   * Refatoração do exemplo do IMC
