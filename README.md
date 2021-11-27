@@ -12,17 +12,25 @@ Prof. Eduardo Ono
 
 | Aula | Data | Conteúdo |
 | :-:  | ---  | ---      |
-| 01 | 15/10 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento; Fundamentos da linguagem de programação Dart
-| 02 | 22/10 | "Hello World!" em Flutter
-| 03 | 29/10 | Aplicação "IMC"
+| [01][] | 15/10 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento; Fundamentos da linguagem de programação Dart
+| [02][] | 22/10 | "Hello World!" em Flutter
+| [03][] | 29/10 | Aplicação "IMC"
 | -- | 05/11 | Avaliação Integrada
-| 04 | 12/11 | Rotas (Navigator)
-| 05 | 19/11 | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
-| 06 | 26/11 | Boas práticas de programação em Flutter
-| 07 | 03/12 | Overview de Jogos Digitais / __Avaliação__
+| [04][] | 12/11 | Rotas (Navigator)
+| [05][] | 19/11 | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
+| [06][] | 26/11 | Boas práticas de programação em Flutter
+| [07][] | 03/12 | Overview de Jogos Digitais / __Avaliação__
 | -- | 10/12 | __Avaliação de 2a. Chamada¹__
 
 ¹Apenas para quem perdeu uma das Avaliações. É necessária solicitação junto à Secretaria.
+
+[01]: ./aulas/README.md#aula-01
+[02]: ./aulas/README.md#aula-02
+[03]: ./aulas/README.md#aula-03
+[04]: ./aulas/README.md#aula-04
+[05]: ./aulas/README.md#aula-05
+[06]: ./aulas/README.md#aula-06
+[07]: https://github.com/eduardo-ono/Jogos-Digitais
 
 <br>
 
