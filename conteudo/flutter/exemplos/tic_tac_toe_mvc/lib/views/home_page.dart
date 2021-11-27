@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Constrói o tabuleiro
   _buildBoard() {
     return Expanded(
       child: GridView.builder(
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
           _controller.buttonEnabled(index) ? () => _buttonPressed(index) : null,
       style: TextButton.styleFrom(
         primary: Colors.white,
-        backgroundColor: Colors.teal[400],
+        backgroundColor: Colors.lightBlue[200],
         onSurface: Colors.grey,
       ),
       child: Text(
@@ -84,8 +85,8 @@ class _HomePageState extends State<HomePage> {
         style: TextStyle(
           fontSize: 100.0,
           color: _controller.buttonSymbol(index) == 'x'
-              ? Colors.yellow
-              : Colors.red,
+              ? Colors.teal[800]
+              : Colors.red[800],
         ),
       ),
     );

@@ -10,28 +10,29 @@ Prof. Eduardo Ono
 <br>
 
 <details>
-  <summary>Aula 01
-
-  ### Introdução ao Desenvolvimento Mobile com Flutter
+  <summary id="aula-01">
+    <strong>Aula 01 - Introdução ao Desenvolvimento Mobile com Flutter</strong>
   </summary>
   <section markdown="1">
 
-  * Conceitos
+* Conceitos
 
-  * História dos Dispositivos Móveis
-    * [TecMundo] [A história do Android](https://www.youtube.com/watch?v=5K4pEk19nhs) (YouTube, 9:12, Ago/2017)
+* História dos Dispositivos Móveis
+  * [TecMundo] [A história do Android](https://www.youtube.com/watch?v=5K4pEk19nhs) (YouTube, 9:12, Ago/2017)
 
-  * Introdução ao Flutter
+* Introdução ao Flutter
 
-  * Configuração do Ambiente de Desenvolvimento com Flutter
+* Configuração do Ambiente de Desenvolvimento com Flutter
 
-  * Exemplos de Aplicações em Flutter
-    * "Hello World"
-      * [exemplo_01](../conteudo/flutter/exemplos/exemplo_01/)
-    * Aplicativo "default" criado pelo `flutter create`
-      * [exemplo_02](../conteudo/flutter/exemplos/exemplo_02/) \| [DartPad](https://dartpad.dev/embed-flutter.html?gh_owner=eduardo-ono&gh_repo=desenvolvimento-mobile&gh_path=aulas/aula_01/lib&theme=dark&run=true&split=75)
+* Exemplos de Aplicações em Flutter
 
-  * Vídeos de Apoio
+  * "Hello World"
+    * [exemplo_01](../conteudo/flutter/exemplos/exemplo_01/)
+
+  * Aplicativo "default" criado pelo `flutter create`
+    * [exemplo_02](../conteudo/flutter/exemplos/exemplo_02/) \| [DartPad](https://dartpad.dev/embed-flutter.html?gh_owner=eduardo-ono&gh_repo=desenvolvimento-mobile&gh_path=aulas/aula_01/lib&theme=dark&run=true&split=75)
+
+* Vídeos de Apoio
 
     ||
     | --- |
@@ -43,9 +44,8 @@ Prof. Eduardo Ono
 ---
 
 <details>
-  <summary>Aula 02
-
-  ### Aplicativo "IMC" em Flutter
+  <summary id="aula-02">
+    <strong>Aula 02 - "Hello World" em Flutter</strong>
   </summary>
   <section markdown="1">
 
@@ -55,13 +55,10 @@ Prof. Eduardo Ono
 ---
 
 <details>
-  <summary>Aula 04
-
-  ### Design Pattern: MVC - Jogo da Velha
+  <summary id="aula-03">
+    <strong>Aula 03 - Aplicativo "IMC" em Flutter</strong>
   </summary>
   <section markdown="1">
-
-  * [Aplicativo Jogo da Velha "Tic Tac Toe" usando o padrão MVC](../conteudo/flutter/exemplos/tic_tac_toe_mvc)
 
   </section>
 </details>
@@ -69,9 +66,8 @@ Prof. Eduardo Ono
 ---
 
 <details>
-  <summary>Aula 05
-
-  ### Rotas (Navigator)
+  <summary id="aula-04">
+    <strong>Aula 04 - Rotas (Navigator)</strong>
   </summary>
   <section markdown="1">
 
@@ -83,6 +79,31 @@ Prof. Eduardo Ono
     ||
     | --- |
     | ![]()
+
+  </section>
+</details>
+
+---
+
+<details>
+  <summary id="aula-05">
+    <strong>Aula 05 - Padrão de Arquitetura: MVC / Jogo da Velha</strong>
+  </summary>
+  <section markdown="1">
+
+  * [Aplicativo Jogo da Velha "Tic Tac Toe" usando o padrão MVC](../conteudo/flutter/exemplos/tic_tac_toe_mvc)
+
+  </section>
+</details>
+
+---
+
+<details>
+  <summary><strong>Aula 06 - Boas práticas de programação em Flutter</strong></summary>
+  <section markdown="1">
+
+  * Refatoração do exemplo do IMC
+    * [Exemplo IMC_03](../conteudo/flutter/exemplos/imc_03)
 
   </section>
 </details>

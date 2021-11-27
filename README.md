@@ -17,9 +17,9 @@ Prof. Eduardo Ono
 | 03 | 29/10 | Aplicação "IMC"
 | -- | 05/11 | Avaliação Integrada
 | 04 | 12/11 | Rotas (Navigator)
-| 05 | 19/11 | Design Pattern - MVC; "Jogo da Velha"
-| 06 | 26/11 | Overview de Jogos Digitais
-| 07 | 03/12 | __Avaliação__
+| 05 | 19/11 | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
+| 06 | 26/11 | Boas práticas de programação em Flutter
+| 07 | 03/12 | Overview de Jogos Digitais / __Avaliação__
 | -- | 10/12 | __Avaliação de 2a. Chamada¹__
 
 ¹Apenas para quem perdeu uma das Avaliações. É necessária solicitação junto à Secretaria.

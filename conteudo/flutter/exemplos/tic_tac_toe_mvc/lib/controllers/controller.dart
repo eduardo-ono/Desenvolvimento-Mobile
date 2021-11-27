@@ -2,7 +2,8 @@ import 'package:tic_tac_toe_mvc/models/model.dart';
 
 class Controller {
   // Atributos
-  var game = Model();
+  var jogo = Model();
+  int numJogadas = 0;
 
   // Construtor
   Controller() {
@@ -11,16 +12,18 @@ class Controller {
 
   // Métodos
   void initGame() {
-    game.reset();
+    jogo.reset();
   }
 
-  String get currentPlayer => game.currentPlayer;
-  String buttonSymbol(int index) => game.game[index + 1];
-  bool buttonEnabled(int index) => game.game[index + 1] == '';
-  String get printGame => game.printGame;
+  String get currentPlayer => jogo.currentPlayer;
+  String buttonSymbol(int index) => jogo.game[index + 1];
+  bool buttonEnabled(int index) => jogo.game[index + 1] == '';
+  String get printGame => jogo.printGame;
 
   void updateGame(int index) {
-    game.update(index + 1);
+    jogo.update(index + 1);
+    // game.checkGame();
+    numJogadas++;
   }
 
   void reset() {

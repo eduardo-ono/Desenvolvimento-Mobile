@@ -1,7 +1,16 @@
 class Model {
   // Atributos
   List<String> game = ['x', '', '', '', '', '', '', '', '', ''];
-  List<int> winConditions = [123, 456, 789, 147, 258, 369, 159, 357];
+  List<int> winConditions = [
+    123, // Primeira linha
+    456, // Segunda linha
+    789, // Terceira linha
+    147,
+    258,
+    369,
+    159,
+    357
+  ];
 
   // Métodos
   String get currentPlayer => game[0];
@@ -9,7 +18,9 @@ class Model {
 
   void reset() {
     game[0] = 'x'; // Jogador inicial
-    for (int i = 1; i < game.length; i++) game[i] = '';
+    for (int i = 1; i < game.length; i++) {
+      game[i] = '';
+    }
   }
 
   void update(int index) {

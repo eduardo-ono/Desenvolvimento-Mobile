@@ -1,4 +1,5 @@
 *.exe
+.vscode/
 _Aulas/
 Bibliografia/
 Chamada/
