@@ -10,6 +10,12 @@ Prof. Eduardo Ono
 
 <br>
 
+## Referências
+
+* https://dev.to/cephalopodluke/introducao-a-programacao-com-dart-aji
+
+<br>
+
 ### Hello World!
 
 <details>
@@ -266,5 +272,25 @@ void main() {
 
   </section>
 </details>
+
+<br>
+
+## Vídeos de Apoio
+
+| Thumb | Descrição |
+| :-:  | --- |
+| [![img](https://img.youtube.com/vi/NZNO6xW5icQ/default.jpg)](https://www.youtube.com/watch?v=NZNO6xW5icQ) | <sup>[Mango]</sup><br>[__Dart em menos de 50 minutos__](https://www.youtube.com/watch?v=NZNO6xW5icQ)<br><sub>(49:24, YouTube, Ago/2020)</sub>
+| [![img](https://img.youtube.com/vi/4JqSM7NU2SA/default.jpg)](https://www.youtube.com/watch?v=4JqSM7NU2SA) | <sup>[Rodrigo Rahman]</sup><br>[__Você programa em JAVA? Quer aprender Dart veja esse vídeo!!!__](https://www.youtube.com/watch?v=4JqSM7NU2SA)<br><sub>(37:48, YouTube, Dez/2020)</sub>
+| [![img](https://img.youtube.com/vi/QyH9UoHTeC8/default.jpg)](https://www.youtube.com/watch?v=QyH9UoHTeC8) | <sup>[Rodrigo Rahman]</sup><br>[__[Flutter] - Programação Funcional com Dart__](https://www.youtube.com/watch?v=QyH9UoHTeC8)<br><sub>(49:19, YouTube, Jul/2020)</sub>
+
+<br>
+
+## Cursos "Completos"
+
+| Thumb | Descrição |
+| :-:  | --- |
+| [![img](https://img.youtube.com/vi/V9PL8S-ihfk/default.jpg)](https://www.youtube.com/playlist?list=PLR5GUTqrcwXhVV-jNR38vfAZabkmGGKfO) | <sup>[Startto]</sup><br>[__Dart-curso__](https://www.youtube.com/playlist?list=PLR5GUTqrcwXhVV-jNR38vfAZabkmGGKfO)<br><sub>(23 vídeos, YouTube, Jan/2022)</sub>
+| [![img](https://img.youtube.com/vi/V9PL8S-ihfk/default.jpg)](https://www.youtube.com/playlist?list=PLeMgLfSDozkMq6WpG-xvCHZEKl_AJTsVK) | <sup>[Jônatas da Silva]</sup><br>[__Dart-curso__](https://www.youtube.com/playlist?list=PLeMgLfSDozkMq6WpG-xvCHZEKl_AJTsVK)<br><sub>(19 vídeos, YouTube, Mai/2020)</sub>
+| [![img](https://img.youtube.com/vi/Vz11rFFewkM/default.jpg)](https://www.youtube.com/playlist?list=PLK5FPzMuRKlyiWZUUqea2Hmszhy9vUixJ) | <sup>[Washington Developer]</sup><br>[__Dart - Language__](https://www.youtube.com/playlist?list=PLK5FPzMuRKlyiWZUUqea2Hmszhy9vUixJ)<br><sub>(49 vídeos, YouTube, Abr/2022)</sub>
 
 <br>

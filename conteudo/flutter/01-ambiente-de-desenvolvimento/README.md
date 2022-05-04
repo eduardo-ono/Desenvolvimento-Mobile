@@ -1,8 +1,22 @@
-> ### Desenvolvimento Mobile
+<table>
+<tr>
+<td align="left" width="8000">
+  <small>Desenvolvimento Mobile</small>
+</td>
+<td align="right">
+  <small>Atualizado&nbsp;em:&nbsp;21/04/2022</small>
+</td>
+</tr>
+</table>
 
-# Flutter > Ambiente de Desenvolvimento
+<br>
 
+<h1 align="center">
+Flutter - Ambiente de Desenvolvimento
+</h1>
+<h4 align="center">
 Prof. Eduardo Ono
+</h4>
 
 <br>
 
@@ -45,16 +59,16 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 
 ### Windows
 
-* Baixar o arquivo .zip (~900 MB) e descompacar o arquivo em um diretório de sua preferência, por exemplo, `C:\src` ou `C:\`. Será criado um sub-diretório chamado `flutter`.
+* Baixar o arquivo .zip (~900 MB) e descompacar o arquivo em um diretório de sua preferência, por exemplo, `C:\src` ou `C:\`. Será criado o sub-diretório `flutter`.
 
   OBS.: __Não__ instalar (descompactar) o flutter em um diretório que requer privilégios elevados, por exemplo, `C:\Arquivos de Programas`.
 
-* Adicionar o diretório `<path>\flutter\bin` na variável de ambiente `PATH` do Windows.
+* Adicionar o diretório `<path_inicial>\flutter\bin` na variável de ambiente `PATH` do Windows.
 
-  #### Configurando Variáveis de Ambiente no Windows
+#### Configurando Variáveis de Ambiente no Windows
 
   * Na janela de pesquisa do Windows, digitar _variáveis_.
-    * Para adicionar uma variável de usuário, escolher a opção 'Editar as variáveis de ambiente para sua conta'.
+    * Para adicionar uma variável de usuário, escolher a opção "Editar as variáveis de ambiente para sua conta".
     * Para editar uma variável de sistema , escolher 'Editar as variáveis de ambiente do sistema'. Também é possível abrir a janela 'Propriedades do Sistema' digitando-se `sysdm.cpl` na janela 'Executar'. Na aba 'Avançado', clicar em 'Variáveis de Ambiente'.
     * Na janela 'Variáveis de Ambiente', selecionar a variável `PATH` e clicar em 'Editar' para adicionar o path do Flutter.
 
@@ -70,9 +84,10 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 
 ### Linux (Ubuntu)
 
-* No Terminal, digitar o comando:
+* No Terminal, digitar os comandos:
 
   ```sh
+  sudo apt update && sudo apt upgrade
   sudo snap install flutter --classic
   ```
 
@@ -86,23 +101,30 @@ Há várias opções de Ambientes de Desenvolvimento para o Flutter:
 
 ## Comandos do Flutter
 
-* Para verificar a versão instalada:
+* Verificar a versão instalada:
 
-  ```
-  flutter --version
-  ```
+```sh
+flutter --version
 
-* Para verificar se todos os [requisitos para execução do flutter](./figuras/flutter-doctor-erros.png) estão instalados:
+```
 
-  ```
-  flutter doctor
-  ```
+* Desabilitar o Google Analytics:
+
+```sh
+flutter config --no-analytics
+```
+
+* Verificar se todos os [requisitos para execução do flutter](./figuras/flutter-doctor-erros.png) estão instalados:
+
+```sh
+flutter doctor
+```
 
 * Para __atualizar__ o Flutter:
 
-  ```
-  flutter upgrade
-  ```
+```
+flutter upgrade
+```
 
 <br>
 

@@ -9,8 +9,11 @@ Prof. Eduardo Ono
 ## Tópicos
 
 * ### [Overview](./00-overview)
-* ### [Ambiente de Desenvolvimento](./02-ambiente-de-desenvolvimento)
+
+* ### [Ambiente de Desenvolvimento](./01-ambiente-de-desenvolvimento/README.md)
+
 * ### [Fundamentos da Linguagem](./fundamentos)
+
 * ### [Exemplos](./exemplos)
 
 <br>
@@ -18,7 +21,9 @@ Prof. Eduardo Ono
 ## Documentação
 
 * [https://flutter.dev/docs](https://flutter.dev/docs)
+
 * [https://api.flutter.dev](https://api.flutter.dev)
+
 * Icons: [https://api.flutter.dev/flutter/material/Icons-class.html](https://api.flutter.dev/flutter/material/Icons-class.html)
 
 <br>

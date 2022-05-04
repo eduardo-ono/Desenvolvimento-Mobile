@@ -1,6 +1,6 @@
-> Desenvolvimento Mobile > Conteúdo
+> Desenvolvimento Mobile > Conteúdo > Ambiente de Desenvolvimento
 
-# Ambiente de Desenvolvimento
+# Android Studio
 
 Prof. Eduardo Ono
 
@@ -14,18 +14,20 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
 ## Requisitos de Hardware
 
-* Processador com tecnologia de virtualização
+* Processador com tecnologia de virtualização. A tecnologia de virtualização deve estar habilitada na BIOS.
 
   * Intel: VT-X
   * AMD: AMD-V
 
-  Obs.: A tecnologia de virtualização deve estar habilitada na BIOS. Para verificar se está habilitada, verifique no Gerenciador de Tarefas. No terminal do Windows, digitar:
+* Para verificar se a tecnologia de virtualização está habilitada:
 
-  ```bat
-  systeminfo
-  ```
+  * Windows: Verificar no Gerenciador de Tarefas ou, no terminal do Windows, digitar:
 
-  Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
+    ```bat
+    systeminfo
+    ```
+
+    Verifique se as opções em "Requisitos do Hyper-V" estão todas com "Sim/Yes".
 
   Na BIOS, a opção para ativar/desativar a tecnologia de virtualização pode ter vários nomes diferentes: 'Virtualization', etc...
 
@@ -59,22 +61,35 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
 <br>
 
-## Instalação do Android Studio no Ubuntu 20.04
+## Instalação do Android Studio no Ubuntu
 
 * Verificar se a tecnologia de virtualização KVM (Kernel-based Virtual Machine) está instalada para processador Intel ou AMD:
 
 * https://linuxize.com/post/how-to-install-kvm-on-ubuntu-20-04/
 
-  No Terminal, digite o comando:
+* https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux
+
+* No Terminal, digitar o comando:
 
   ```bash
   sudo snap install android-studio --classic
   ```
+* Para atualizar o Android Studio
+
+  ```bash
+  sudo snap refresh android-studio --classic 
+  ```
 
 * Vídeos de Apoio
 
-  | [![](https://img.youtube.com/vi/x3nVHXv3oyw/default.jpg)](https://www.youtube.com/watch?v=x3nVHXv3oyw "[ProgrammingKnowledge] How to Install Android Studio on Ubuntu 20.04 LTS \|\| 13:02, YouTube, Fev/2021")
+  | [![img](https://img.youtube.com/vi/x3nVHXv3oyw/default.jpg)](https://www.youtube.com/watch?v=x3nVHXv3oyw "[ProgrammingKnowledge] How to Install Android Studio on Ubuntu 20.04 LTS \|\| 13:02, YouTube, Fev/2021")
   | ---
+
+* Para remover o Android Studio:
+
+  ```bash
+  sudo snap remove android-studio --classic 
+  ```
 
 <br>
 

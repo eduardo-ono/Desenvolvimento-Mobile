@@ -72,6 +72,6 @@ Prof. Eduardo Ono
 
 | Thumb | Descrição |
 | :-:  | --- |
-| [![img](https://img.youtube.com/vi/Nwkn8kkqN94/default.jpg)](https://www.youtube.com/watch?v=Nwkn8kkqN94) | <sup>[ENDEVR]</sup> [__The Mobile Revolution: How Cell Phones CHANGED our Lives Forever \| ENDEVR Documentary__](https://www.youtube.com/watch?v=Nwkn8kkqN94) <br> <sub>(58:03, YouTube, Abr/2021)</sub>
+| [![img](https://img.youtube.com/vi/Nwkn8kkqN94/default.jpg)](https://www.youtube.com/watch?v=Nwkn8kkqN94) | <sup>[ENDEVR]</sup> [__The Mobile Revolution: How Cell Phones CHANGED our Lives Forever \| ENDEVR Documentary__](https://www.youtube.com/watch?v=Nwkn8kkqN94)<br><sub>(58:03, YouTube, Abr/2021)</sub>
 
 <br>

@@ -6,7 +6,7 @@ Prof. Eduardo Ono
 
 <br>
 
-## Abstração
+## Abstração e Encapsulamento
 
 <details>
     <summary>Classes e Objetos</summary>
@@ -14,7 +14,7 @@ Prof. Eduardo Ono
 ```dart
 void main() {
   Paciente paciente = Paciente();
-  paciente.nome = "Fulano de Tal";
+  paciente.nome = 'Fulano de Tal';
   paciente.peso = 75; // kg
   paciente.altura = 1.82; // metros
   paciente.calcularImc();
@@ -35,11 +35,11 @@ class Paciente {
   }
 
   void imprimirRegistro() {
-    print("Nome: $nome");
-    print("Peso: $peso kg");
-    print("Altura: $altura m");
-    print("IMC: ${imc.toStringAsFixed(1)}");
-    print("");
+    print('Nome: $nome');
+    print('Peso: $peso kg');
+    print('Altura: $altura m');
+    print('IMC: ${imc.toStringAsFixed(1)}');
+    print('');
   }
 }
 ```
@@ -176,7 +176,7 @@ Paciente inserirPaciente() {
 
 <br>
 
-## Encapsulamento
+## Polimorfismo
 
 <br>
 
@@ -185,5 +185,13 @@ Paciente inserirPaciente() {
 | Thumb | Descrição |
 | :-: | --- |
 | [![img](https://img.youtube.com/vi/dL2NxrNewBQ/default.jpg)](https://www.youtube.com/watch?v=dL2NxrNewBQ) | <sup>[Cod3r Cursos]</sup> [__FLUTTER - Vou mudar sua VISÃO__](https://www.youtube.com/watch?v=dL2NxrNewBQ)<br><sub>(27:48, YouTube, Dez/2019)</sub>
+
+<br>
+
+## Classes Abstratas
+
+| Thumb | Descrição |
+| :-: | --- |
+| [![img](https://img.youtube.com/vi/nZov6ztrocc/default.jpg)](https://www.youtube.com/watch?v=nZov6ztrocc) | <sup>[Flutterando]</sup> [__Flutter tips - Para que serve classes abstratas?__](https://www.youtube.com/watch?v=nZov6ztrocc)<br><sub>(31:09, YouTube, Abr/2022)</sub>
 
 <br>
