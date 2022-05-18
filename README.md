@@ -1,6 +1,11 @@
-# Desenvolvimento Mobile
+<h1 align="center">
 
+Desenvolvimento Mobile
+
+</h1>
+<h4 align="center">
 Prof. Eduardo Ono
+</h4>
 
 <br>
 
@@ -13,9 +18,9 @@ Prof. Eduardo Ono
 | Aula | Data | Conteúdo |
 | :-:  | ---  | ---      |
 | [01][] | 27/04 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento;
-| [02][] | 04/05 | Fundamentos da linguagem de programação Dart; "Hello World!" em Flutter
-| [03][] | 11/05 | Widgets, Framework Flutter, StatelessWidget e StatefullWidget
-| [04][] | / | Programa IMC
+| [02][] | 04/05 | Fundamentos da linguagem Dart; "Hello World!" em Flutter
+| [03][] | 11/05 | "Estilo Flutter" de Programação, Documentação do Flutter, Widgets
+| [04][] | 18/05 | Framework Flutter, StatelessWidget e StatefullWidget, Aplicativo IMC
 | [04][] | / | Rotas (Navigator)
 | [05][] | / | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
 | [06][] | / | Fundamentos de Jogos Digitais
