@@ -22,6 +22,6 @@ Prof. Eduardo Ono
 
 | Projeto | Descrição |
 | :-: | --- |
-| IMC | Calcula o IMC de uma pessoa.
+| [IMC](./imc/README.md) | Calcula o IMC de uma pessoa.
 
 <br>
