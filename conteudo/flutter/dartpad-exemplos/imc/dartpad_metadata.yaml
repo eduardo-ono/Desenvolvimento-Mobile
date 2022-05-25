@@ -1,0 +1,4 @@
+name: imc
+mode: flutter
+files:
+  - name: main.dart

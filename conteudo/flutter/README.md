@@ -12,9 +12,22 @@ Prof. Eduardo Ono
 
 * ### [Ambiente de Desenvolvimento](./01-ambiente-de-desenvolvimento/README.md)
 
-* ### [Fundamentos da Linguagem](./fundamentos)
+* ### Utilização do Flutter
+
+* ### [Fundamentos do Framework](./fundamentos)
+
+* ### Exemplos no Dartpad
 
 * ### [Exemplos](./exemplos)
+
+<br>
+
+## Novidades
+
+| Thumb | Descrição |
+| :-: | --- |
+| [![img](https://img.youtube.com/vi/Qi4C0ZroTm0/default.jpg)](https://www.youtube.com/watch?v=Qi4C0ZroTm0) | <sup>[Rodrigo Rahman]</sup><br>[__Flutter 3 Novidades - DEVO ATUALIZAR???__](https://www.youtube.com/watch?v=Qi4C0ZroTm0)<br><sub>(16:28, YouTube, Mai/2022)</sub>
+| [![img](https://img.youtube.com/vi/d-F14QrwM2A/default.jpg)](https://www.youtube.com/watch?v=d-F14QrwM2A) | <sup>[Prof. Diego Antunes]</sup><br>[__Flutter 3 - Novidades e Material 3__](https://www.youtube.com/watch?v=d-F14QrwM2A)<br><sub>(13:56, YouTube, Mai/2022)</sub>
 
 <br>
 
