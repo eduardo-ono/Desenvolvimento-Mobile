@@ -18,14 +18,16 @@ Prof. Eduardo Ono
 | Aula | Data | Conteúdo |
 | :-:  | ---  | ---      |
 | [01] | 27/04 | Introdução ao Desenvolvimento Mobile; Flutter SDK; Configuração do ambiente de desenvolvimento;
-| [02] | 04/05 | Fundamentos da linguagem Dart; "Hello World!" em Flutter
+| [02] | 04/05 | Fundamentos da linguagem Dart; "Olá Mundo!" em Flutter
 | [03] | 11/05 | "Estilo Flutter" de Programação, Documentação do Flutter, Widgets
-| [04] | 18/05 | Framework Flutter, StatelessWidget e StatefullWidget, Aplicativo IMC
-| [04] | / | Rotas (Navigator)
-| [05] | / | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
-| [06] | / | Fundamentos de Jogos Digitais
-| [07] | 08/06 | __2ª Avaliação__
-| -- | / | __Avaliação de 2a. Chamada¹__
+| [04] | 18/05 | Framework Flutter, StatelessWidget e StatefullWidget
+| [05] | 25/05 | [Aplicativo IMC]
+| [06] | 01/06 | [Exemplos no DartPad] (Revisão para a Prova)
+| [07] | / | Rotas (Navigator)
+| | / | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
+| | / | Fundamentos de Jogos Digitais
+| | 08/06 | __2ª Avaliação__
+| | / | __Avaliação de 2a. Chamada¹__
 
 ¹Apenas para quem perdeu uma das Avaliações. É necessária solicitação junto à Secretaria.
 
@@ -36,12 +38,15 @@ Prof. Eduardo Ono
 [05]: ./aulas/README.md#aula-05
 [06]: ./aulas/README.md#aula-06
 [07]: https://github.com/eduardo-ono/Jogos-Digitais
+[Aplicativo IMC]: "./conteudo/flutter/dartpad-exemplos/imc/README.md
+[Exemplos no DartPad]: ./conteudo/flutter/dartpad-exemplos/README.md
 
 <br>
 
 ## Pré-Requisitos
 
 * [Introdução à Programação](https://github.com/eduardo-ono/Introducao-a-Programacao/)
+* [Desenvolvimento Web](https://github.com/eduardo-ono/Desenvolvimento-Web/)
 * [Programação Orientada a Objetos](https://github.com/eduardo-ono/Programacao-Orientada-a-Objetos/)
 
 <br>
