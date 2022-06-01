@@ -39,6 +39,7 @@ Prof. Eduardo Ono
 | Thumb | Descrição |
 | :-: | --- |
 | [![img](https://img.youtube.com/vi/VozPNrt-LfE/default.jpg)](https://www.youtube.com/watch?v=VozPNrt-LfE "React Native Crash Course 2020") | <sup>[Academind]</sup><br>[__React Native Crash Course \| Build a Complete App__](https://www.youtube.com/watch?v=VozPNrt-LfE)<br><sub>(3:24:28, YouTube, Mai/2022)</sub>
+| [![img](https://img.youtube.com/vi/qSRrxpdMpVc/default.jpg)](https://www.youtube.com/watch?v=qSRrxpdMpVc) | <sup>[Academind]</sup><br>[__React Native Tutorial for Beginners - Crash Course 2020__](https://www.youtube.com/watch?v=qSRrxpdMpVc)<br><sub>(5:45:43, YouTube, Ago/2019)</sub>
 | [![img](https://img.youtube.com/vi/Hf4MJH0jDb4/default.jpg)](https://www.youtube.com/watch?v=Hf4MJH0jDb4 "React Native Crash Course 2020") | <sup>[Traversy Media]</sup><br>[__React Native Crash Course 2020__](https://www.youtube.com/watch?v=Hf4MJH0jDb4)<br><sub>(51:27, YouTube, Fev/2020)</sub>
 
 * [Programming with Mosh] <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc" title=
