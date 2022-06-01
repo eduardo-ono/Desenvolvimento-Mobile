@@ -5,7 +5,9 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(App());
+void main() {
+  runApp(App());
+}
 
 class App extends StatelessWidget {
   // Atributos
@@ -28,13 +30,13 @@ class HomePage extends StatelessWidget {
   void _exibirDialogo(BuildContext context) {
     // Cria um objeto "botão OK"
     var flatButton = FlatButton(
-      child: Text("OK"),
+      child: const Text("OK"),
       onPressed: () => Navigator.of(context).pop(),
     );
     // Cria o conteúdo de uma caixa de diálogo do tipo AlertDialog
     var alertDialog = AlertDialog(
-      title: Text("Título da Caixa de Diálogo"),
-      content: Text("Mensagem"),
+      title: const Text("Título da Caixa de Diálogo"),
+      content: const Text("Mensagem"),
       // Define o conjunto de botões na base da caixa de diálogo
       actions: <Widget>[flatButton],
     );
@@ -48,14 +50,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Cria um botão do tipo RaisedButton
-    var raisedButton = RaisedButton(
-      child: Text("Clique aqui", style: TextStyle(fontSize: 18)),
+    var elevatedButton = ElevatedButton(
+      child: const Text("Clique aqui", style: TextStyle(fontSize: 18)),
       onPressed: () => _exibirDialogo(context),
     );
     // Cria um objeto do tipo Scaffold
     var scaffold = Scaffold(
-      appBar: AppBar(title: Text("AlertDialog")),
-      body: Center(child: raisedButton),
+      appBar: AppBar(title: const Text("AlertDialog")),
+      body: Center(child: elevatedButton),
     );
     return scaffold;
   }
