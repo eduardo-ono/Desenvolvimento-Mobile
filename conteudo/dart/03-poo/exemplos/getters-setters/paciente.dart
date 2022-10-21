@@ -28,7 +28,9 @@ class Paciente {
 
   // Métodos
   void calcularImc() {
-    if (_peso > 0 && _altura > 0) _imc = _peso / (_altura * _altura);
+    if (_peso > 0 && _altura > 0) {
+      _imc = _peso / (_altura * _altura);
+    }
   }
 
   void imprimirDados() {

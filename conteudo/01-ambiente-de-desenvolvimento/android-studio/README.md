@@ -51,11 +51,12 @@ Tutorial para a instalação do Android Studio e configuração do Emulador Andr
 
 * Vídeos de Apoio
 
-  | Instalação do Android Studio |
-  | --- |
-  | [![](https://img.youtube.com/vi/_Uqf5_kN6Rw/default.jpg)](https://www.youtube.com/watch?v=_Uqf5_kN6Rw "[Área Tech Brasil] Android Studio 4.0 - Como Instalar Corretamente \|\| 14:32, YouTube, Abr/2020") . [![img](https://img.youtube.com/vi/DCsaipE4OPw/default.jpg)](https://www.youtube.com/watch?v=DCsaipE4OPw "How To Install Android Studio On Windows 11| Android Studio Installation With SDK \|\| 12:34, YouTube, Ago/2021")
+  | Thumb | Descrição |
+  | :-: | --- |
+  | [![img](https://img.youtube.com/vi/PZMgUGcWXPc/default.jpg)](https://www.youtube.com/watch?v=PZMgUGcWXPc) | <sup>[Área Tech Brasil]</sup><br>[__NOVO ANDROID STUDIO - GUIA OFICIAL DE INSTALAÇÃO__](https://www.youtube.com/watch?v=PZMgUGcWXPc)<br><sub>(11:11, YouTube, Ago/2022)</sub>
+  | [![img](https://img.youtube.com/vi/DCsaipE4OPw/default.jpg)](https://www.youtube.com/watch?v=DCsaipE4OPw) | [__Android Studio Installation With SDK__](https://www.youtube.com/watch?v=DCsaipE4OPw)<br><sub>(12:34, YouTube, Ago/2021)</sub>
   | Erros no Android Studio
-  | [![](https://img.youtube.com/vi/ECIz_FnwuoI/default.jpg)](https://www.youtube.com/watch?v=ECIz_FnwuoI "[Área Tech Brasil] Como Corrigir Erros no Android Studio? \|\| 1:08:30, YouTube, Out/2020")
+  | [![img](https://img.youtube.com/vi/ECIz_FnwuoI/default.jpg)](https://www.youtube.com/watch?v=ECIz_FnwuoI) | <sup>[Área Tech Brasil]</sup><br>[__Como Corrigir Erros no Android Studio?__](https://www.youtube.com/watch?v=ECIz_FnwuoI)<br><sub>(1:08:30, YouTube, Out/2020)</sub>
   | Dicas
   | [![img](https://img.youtube.com/vi/hYyS6ptcs9k/default.jpg)](https://www.youtube.com/watch?v=hYyS6ptcs9k "Android Studio não roda no meu computador \|\| 13:22, YouTube, Jul/2020")
 

@@ -2,7 +2,7 @@ abstract class Poligono {
   // Atributos
   String _titulo = '';
   List<double> lados = [];
-  bool _regular = false;
+  final bool _regular = false;
   double _perimetro = 0;
   double _area = 0;
 
