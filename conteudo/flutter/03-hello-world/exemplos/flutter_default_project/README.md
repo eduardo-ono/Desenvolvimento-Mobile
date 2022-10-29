@@ -15,4 +15,6 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-https://eduardo-ono.github.io//Desenvolvimento-Mobile/conteudo/flutter/03-hello-world/exemplos/flutter_default_project/web/
+https://eduardo-ono.github.io/Desenvolvimento-Mobile/conteudo/flutter/03-hello-world/exemplos/flutter_default_project/build/web/
+
+&nbsp;
