@@ -14,15 +14,14 @@
 | :-:  | ---  | ---      |
 | 01 | 14/10 | Introdução ao Desenvolvimento Mobile; Fundamentos da linguagem Dart.
 | 02 | 21/10 | Flutter SDK; Configuração do ambiente de desenvolvimento; "Olá Mundo!" em Flutter.
-| 03 |  | "Estilo Flutter" de Programação, Documentação do Flutter, Widgets
-| 04 |  | Framework Flutter, StatelessWidget e StatefullWidget
-| 05 |  | [Aplicativo IMC]
-| 06 |  | [Exemplos no DartPad] (Revisão para a Prova)
-| 07 |  | Rotas (Navigator)
-|  |  | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
-|  |  | Fundamentos de Jogos Digitais
-|  |  | __2ª Avaliação__
-|  |  | __Avaliação de 2a. Chamada¹__
+| 03 | 28/10 | Framework Flutter, Widgets, StatelessWidget e StatefullWidget.
+| 04 | 04/11 | Documentação do Flutter, [Aplicativo IMC].
+| 05 |  | [Exemplos no DartPad] (Revisão para a Prova)
+| 06 |  | Rotas (Navigator)
+| 07 |  | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
+| 08 |  | Fundamentos de Jogos Digitais
+| 09 |  | __2ª Avaliação__
+| 10 |  | __Avaliação de 2a. Chamada¹__
 
 ¹Apenas para quem perdeu uma das Avaliações. É necessária solicitação junto à Secretaria.
 
