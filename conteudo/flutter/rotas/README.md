@@ -13,8 +13,9 @@
 
 ```dart
 routes: {
-    '/': (context) => MyHomePage('Título'),
-    'outra_tela': (context) => OutraTela(),
+    // 'nome_da_rota': (context) => Classe Stateless ou Stateful
+    '/': (context) => const MyHomePage(title: 'Título'),
+    'outra_tela': (context) => const OutraTela(),
 }
 ```
 
