@@ -8,7 +8,7 @@ Prof. Eduardo Ono
 
 ## Conceitos
 
-> O ___MVC___ (_Model-View-Controller_) é um padrão de arquitetura de software que divide uma aplicação em três camadas: _Model_, _View_ e _Controller_.
+> O __*MVC*__ (_Model-View-Controller_) é um padrão de arquitetura de software que divide uma aplicação em três camadas: _Model_, _View_ e _Controller_.
 
 <br>
 

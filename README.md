@@ -16,9 +16,9 @@
 | 02 | 21/10 | Flutter SDK; Configuração do ambiente de desenvolvimento; "Olá Mundo!" em Flutter.
 | 03 | 28/10 | Framework Flutter, Widgets, StatelessWidget e StatefullWidget.
 | 04 | 04/11 | Documentação do Flutter, [Aplicativo IMC].
-| 05 |  | [Exemplos no DartPad] (Revisão para a Prova)
-| 06 |  | Rotas (Navigator)
-| 07 |  | Padrões de Arquitetura (de Software): MVC; "Jogo da Velha"
+| 05 | 11/11 | [Estruturas de diretórios de um projeto Flutter]; [Comentários sobre padrões arquiteturais]; Telas; [Rotas nomeadas em uma aplicação Flutter]
+| 06 |  | 
+| 07 |  | "Jogo da Velha"
 | 08 |  | Fundamentos de Jogos Digitais
 | 09 |  | __2ª Avaliação__
 | 10 |  | __Avaliação de 2a. Chamada¹__
@@ -32,7 +32,10 @@
 [05]: ./aulas/README.md#aula-05
 [06]: ./aulas/README.md#aula-06
 [07]: https://github.com/eduardo-ono/Jogos-Digitais
-[Aplicativo IMC]: "./conteudo/flutter/dartpad-exemplos/imc/README.md
+[Aplicativo IMC]: ./conteudo/flutter/dartpad-exemplos/imc/README.md
+[Estruturas de diretórios de um projeto Flutter]: ./conteudo/02-fundamentos/arquitetura-de-software/padroes-arquiteturais/README.md
+[Comentários sobre padrões arquiteturais]: ./conteudo/02-fundamentos/arquitetura-de-software/padroes-arquiteturais/README.md
+[Rotas nomeadas em uma aplicação Flutter]: ./conteudo/flutter/rotas/
 [Exemplos no DartPad]: ./conteudo/flutter/dartpad-exemplos/README.md
 
 &nbsp;
