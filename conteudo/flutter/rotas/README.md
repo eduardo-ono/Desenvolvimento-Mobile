@@ -53,6 +53,6 @@ actions: [
 
 | Projeto | Descrição |
 | --- | --- |
-| [Rotas Nomeadas](./exemplos/rotas_nomeadas/) | Exemplifica o uso de rotas nomeadas.<br><sub>Baseado na vídeo aula do Prof. Hélio Kamakawa (IFPR):<br>https://www.youtube.com/watch?v=JoNhT_kiuaQ</sub>
+| [Rotas Nomeadas](./exemplos/rotas_nomeadas/) | Exemplifica o uso de rotas nomeadas.<br><sub>Baseado na vídeo aula do Prof. Hélio Kamakawa (IFPR): https://www.youtube.com/watch?v=JoNhT_kiuaQ</sub>
 
 &nbsp;
