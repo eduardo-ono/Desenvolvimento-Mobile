@@ -17,7 +17,7 @@
 | 03 | 28/10 | Framework Flutter, Widgets, StatelessWidget e StatefullWidget.
 | 04 | 04/11 | Documentação do Flutter, [Aplicativo IMC].
 | 05 | 11/11 | [Estruturas de diretórios de um projeto Flutter]; [Comentários sobre padrões arquiteturais]; Telas; [Rotas nomeadas em uma aplicação Flutter]
-| 06 |  | 
+| 06 | 18/11 | [Drawer, ListView, ListTile].
 | 07 |  | "Jogo da Velha"
 | 08 |  | Fundamentos de Jogos Digitais
 | 09 |  | __2ª Avaliação__
@@ -36,6 +36,7 @@
 [Estruturas de diretórios de um projeto Flutter]: ./conteudo/02-fundamentos/arquitetura-de-software/padroes-arquiteturais/README.md
 [Comentários sobre padrões arquiteturais]: ./conteudo/02-fundamentos/arquitetura-de-software/padroes-arquiteturais/README.md
 [Rotas nomeadas em uma aplicação Flutter]: ./conteudo/flutter/rotas/
+[Drawer, ListView, ListTile]: ./conteudo/flutter/rotas/exemplos/drawer/
 [Exemplos no DartPad]: ./conteudo/flutter/dartpad-exemplos/README.md
 
 &nbsp;

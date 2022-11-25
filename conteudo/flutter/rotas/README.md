@@ -54,5 +54,6 @@ actions: [
 | Projeto | Descrição |
 | --- | --- |
 | [Rotas Nomeadas](./exemplos/rotas_nomeadas/) | Exemplifica o uso de rotas nomeadas.<br><sub>Baseado na vídeo aula do Prof. Hélio Kamakawa (IFPR): https://www.youtube.com/watch?v=JoNhT_kiuaQ</sub>
+| [![img](https://img.youtube.com/vi/Mt41FpSS-Vo/default.jpg)](https://www.youtube.com/watch?v=Mt41FpSS-Vo) | <sup>[Tadas Petra]</sup><br>[__Flutter File Structure for Big Projects__](https://www.youtube.com/watch?v=Mt41FpSS-Vo)<br><sub>(9:39, YouTube, Out/2020)</sub> | 
 
 &nbsp;
