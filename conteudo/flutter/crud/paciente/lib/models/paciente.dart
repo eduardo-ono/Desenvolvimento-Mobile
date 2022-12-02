@@ -12,7 +12,7 @@ class Paciente {
       : _nome = nome,
         _peso = peso,
         _altura = altura {
-    _imc = calcularImc();
+    calcularImc();
   }
 
   // Métodos
@@ -20,6 +20,7 @@ class Paciente {
   String get nome => _nome;
   double get peso => _peso;
   double get altura => _altura;
+  double get imc => _imc;
 
   set nome(String nome) {
     _nome = nome;
@@ -38,7 +39,8 @@ class Paciente {
   }
 
   double calcularImc() {
-    if (_imc == 0) return 0;
-    return 1.3 * _peso / pow(_altura, 2.5);
+    if (_peso <= 0 || _altura <= 0) return 0;
+    _imc = 1.3 * _peso / pow(_altura, 2.5);
+    return _imc;
   }
 }

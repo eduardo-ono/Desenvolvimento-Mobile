@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rotas_nomeadas/app/my_app.dart';
+import '../my_app.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
