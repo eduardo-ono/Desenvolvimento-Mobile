@@ -72,9 +72,6 @@ class _HomePageState extends State<HomePage> {
   _HomePageState(this.lista);
 
   // Métodos
-  void _atualizarTela() {
-    setState(() {});
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +94,7 @@ class _HomePageState extends State<HomePage> {
             );
           }),
       floatingActionButton: FloatingActionButton(
-        onPressed: _atualizarTela,
+        onPressed: () => setState(() {}),
         tooltip: 'Atualizar',
         child: Icon(Icons.update),
       ),
@@ -351,7 +348,7 @@ class _TelaInformacoesDoPaciente extends State<TelaInformacoesDoPaciente> {
                 controller: imcController,
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text(
                 "Atualizar Dados",
                 style: TextStyle(fontSize: _fontSize),
@@ -541,7 +538,7 @@ class _TelaCadastrarPacienteState extends State<TelaCadastrarPaciente> {
               ),
             ),
             // Saída
-            RaisedButton(
+            ElevatedButton(
               child: Text(
                 "Cadastrar Paciente",
                 style: TextStyle(fontSize: _fontSize),
