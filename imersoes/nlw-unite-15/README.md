@@ -11,7 +11,7 @@ Desenvolvimento de uma aplicação mobile em React Native no evento NLW Unite (1
 
 Período: 01/04/2024 à 04/04/2024<br>
 Carga horária: 6 horas<br>
-Instrutor:
+Instrutor: Rodrigo Gonçalves (Educador na Rocketseat)
 
 &nbsp;
 
